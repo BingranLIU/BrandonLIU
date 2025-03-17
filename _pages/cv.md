@@ -11,54 +11,43 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.S. in Tsinghua University
+* B.S. in Harbin Institute of Technology, 2023
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+Zhipu GBC (LLM Leading Unicorn/TsinghuaGLM) AI Engineer 2024.07 -
+ Chery DITC (Fortune Global 500) Data Analysis and Algorithm 2023.04 - 2024.07
+Advanced to final interview with CIO. Developed marketing algorithms, data mining, and middleware ADS/pipelines. Analyzed and visualized data, created reports, governed data, and drove digital transformation. Later, at the Group Digital
+Information Center, focused on ML/NLP algorithms for llm deployment, sales forecasting and knowledge graph initiatives.
+* 2024.07 - : AI Engineer
+  * Zhipu GBC (LLM Leading Unicorn/TsinghuaGLM)
+  * Duties includes: Involved in the international expansion of Tsinghua GLM large model, responsible for technical development and algorithm optimization of international business lines. In charge of SFT, PE, RAG related work, including industry application solutions, engineering, POC, technical delivery, and industry SFT for large models.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2023.04 - 2024.07: Machine Learning Engineer
+  * Chery DITC (Fortune Global 500)
+  * Duties included: Advanced to final interview with CIO. Developed marketing algorithms, data mining, and middleware ADS/pipelines. Analyzed and visualized data, created reports, governed data, and drove digital transformation. Later, at the Group Digital Information Center, focused on ML/NLP algorithms for llm deployment, sales forecasting and knowledge graph initiatives.
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* LLM
+  * RAG
+  * RTC
+  * MLLM
+  * Multi-agent
+* ML
+  * User Growth
+  * Data Governance
+  * Dataphin
+  * CRM
+  
+Project Experience
+======
+* Samsung S25 On-Device-Cloud AI
+* FWD/CMHK-RAG System
+* International Sales Forecast System
+* Marketing Algorithms and Data Mining
 
-Publications
+Research
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Demystifying the Black Box: AI-Enhanced Logistic Regression for Lead Scoring - Sole Author, APIN(SCI-Q2)
