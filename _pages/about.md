@@ -7,7 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Mr. Bingran Liu currently serves as an AI Engineer at the International Business Center of Zhipu AI, primarily involved in the global deployment of the Tsinghua GLM model. He is responsible for the application and implementation of foundational large-scale models. Mr. Liu completed his Bachelor’s degree in Information Management and Information Systems at Harbin Institute of Technology. He is currently pursuing a Master’s degree in Financial Big Data at the Tsinghua University School of Economics and Management and the Shenzhen International Graduate School. Previously, he worked as an Algorithm Engineer at a data middle office of a Fortune Global 500 company. His expertise includes the application of large models in edge computing scenarios, real-time communication of multimodal models, construction of multi-agent systems, and intelligent marketing. He is a key member of projects such as Samsung Bixby AI.
+Mr. Bingran Liu currently serves as an AI Engineer at Zhipu GBC, primarily involved in the global deployment of the Tsinghua GLM model. He is responsible for the application and implementation of foundational large-scale models. 
+Mr. Liu completed his Bachelor’s degree in Information Management and Information System at Harbin Institute of Technology. He is currently pursuing a Master’s degree in Financial Big Data at the Tsinghua University School of Economics and Management and the Shenzhen International Graduate School. 
+Previously, he worked as an Algorithm Engineer at a data middle office of a Fortune Global 500 company. His expertise includes the application of large models in edge computing scenarios, real-time communication of multimodal models, construction of multi-agent systems, and intelligent marketing. He is a key member of projects such as Samsung Bixby AI.
 
 Research Interests:
 ======
@@ -24,12 +26,12 @@ Research and Project Achievements:
 1. Samsung Bixby AI Visual-Assistant, Core Members
 1. Multi-agent RAG System for Business Q&A, Core Member
 1. Sales Forecasting System Based on Time Series Analysis and Multiple Linear Regression, Project Manager
-1. Intelligent Evaluation of Marketing Leads, Core Member
+1. Intelligent Evaluation of Marketing Leads, Project Manager
 
 Experience:
 ------
 1. Tsinghua University School of Economics and Management & Shenzhen International Graduate School, Master’s in Financial Big Data (2024-present)
-1. Zhipu AI, International Business Center, AI Engineer (2024-present)
-1. Chery Data and Information Center, Algorithm Engineer (2023-2024)
+1. Zhipu GBC, AI Engineer (2024-present)
+1. Chery DITC, Algorithm Engineer (2023-2024)
 1. Harbin Institute of Technology, School of Economics and Management, Bachelor’s in Information Management and Information Systems (2019-2023)
 1. Graduate Industry Mentor – Li Tie, Executive Director and CFO of Li Auto
