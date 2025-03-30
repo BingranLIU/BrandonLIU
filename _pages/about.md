@@ -33,9 +33,9 @@ Research and Project Achievements:
 Experience:
 ------
 1. Tsinghua University School of Economics and Management & Shenzhen International Graduate School, Master’s in Financial Big Data (2024-present)
-1. Zhipu GBC, AI Engineer (2024-present)
-1. Chery DITC, Algorithm Engineer (2023-2024)
-1. Harbin Institute of Technology, School of Economics and Management, Bachelor’s in Information Management and Information Systems (2019-2023)
+1. Zhipu AI (Tsinghua GLM) – Global Business Center, AI Engineer (2024–Present)
+2. Chery Group (Fortune Global 500) – Digital & Information Technology Center, Algorithm Engineer (2023–2024)
+1. Harbin Institute of Technology, School of Economics and Management, Bachelor’s in Information Management and Information System (2019-2023)
 
 Other:
 ------
