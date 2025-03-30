@@ -13,7 +13,7 @@ Mr. Liu completed his Bachelor’s degree in Information Management and Informat
 
 Previously, Mr. Liu worked as an Algorithm Engineer at a data middle office of a Fortune Global 500 company. His expertise includes the application of large models in edge computing scenarios, real-time communication of multimodal models, construction of multi-agent systems, and intelligent marketing. He is a key member of projects such as Samsung Bixby AI.
 
-You can find the content of his academic work on this page: [https://orcid.org/0009-0005-4706-0558].
+You can find the content of his academic work on this page: https://orcid.org/0009-0005-4706-0558.
 
 Research Interests:
 ======
