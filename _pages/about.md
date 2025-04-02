@@ -9,7 +9,7 @@ redirect_from:
 
 Mr. Bingran Liu currently serves as an AI Engineer at Zhipu GBC, primarily involved in the global deployment of the Tsinghua GLM. He is responsible for the application and implementation of LLMs. 
 
-Mr. Liu completed his Bachelor’s degree in Information Management and Information System at Harbin Institute of Technology. He is currently pursuing a Master’s degree in Financial Big Data at the Tsinghua University School of Economics and Management and the Shenzhen International Graduate School. 
+Mr. Liu completed his Bachelor’s degree in Information Management and Information System at Harbin Institute of Technology. He is currently pursuing a Master’s degree in Financial Big Data at the Tsinghua University School of Economics and Management and the Shenzhen International Graduate School. He has been selected for the EU Joint Master’s Program and has received a potential scholarship opportunity (Erasmus+).
 
 Previously, Mr. Liu worked as an Algorithm Engineer at a data middle office of a Fortune Global 500 company. His expertise includes the application of large models in edge computing scenarios, real-time communication of multimodal models, construction of multi-agent systems, and intelligent marketing. He is a key member of projects such as Samsung Bixby AI.
 
