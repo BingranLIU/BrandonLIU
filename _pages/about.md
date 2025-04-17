@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Mr. Bingran Liu currently serves as an AI Engineer at Zhipu GBC (Z.ai), primarily involved in the global deployment of the Tsinghua GLM. He is responsible for the application and implementation of LLMs. 
+Mr. Bingran Liu currently serves as an AI Engineer at Zhipu GBC [link](Z.AI), primarily involved in the global deployment of the Tsinghua GLM. He is responsible for the application and implementation of LLMs. 
 
 Mr. Liu completed his Bachelor’s degree in Information Management and Information System at Harbin Institute of Technology. He is currently pursuing a Master’s degree in Financial Big Data at the Tsinghua University School of Economics and Management and the Shenzhen International Graduate School. He has been selected for the EU Joint Master’s Program and has received a potential scholarship opportunity (Erasmus+).
 
@@ -22,8 +22,8 @@ Research Interests:
 
 Projects:
 ------
-1. LIU, B. Demystifying the black box: AI-enhanced logistic regression for lead scoring. Appl Intell 55, 574 (2025). https://doi.org/10.1007/s10489-025-06430-4
-1. Liu, B. Applying Information Space Model Combined with Large Models to Public Governance. AP-PPN (2025). https://www.asiapacificppn.org
+1. LIU, B. Demystifying the black box: AI-enhanced logistic regression for lead scoring. Appl Intell 55, 574 (2025). [link](https://doi.org/10.1007/s10489-025-06430-4)
+1. Liu, B. Applying Information Space Model Combined with Large Models to Public Governance. AP-PPN (2025). [link](https://www.asiapacificppn.org)
 1. Samsung Bixby-RTC Voice Call and Video Call: The World’s First AI-Powered Video Dialogue Phone, Core Members
 1. Samsung Bixby AI Visual-Assistant, Core Members
 1. Multi-agent RAG System for Business Q&A, Core Member
