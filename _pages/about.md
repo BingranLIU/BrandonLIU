@@ -9,7 +9,7 @@ redirect_from:
 
 Mr. Bingran Liu currently serves as an AI Engineer at Z.ai([Z.ai](https://z.ai)), primarily involved in the global deployment of the Tsinghua GLM. He is responsible for the application and implementation of LLMs. 
 
-Mr. Liu completed his Bachelor’s degree in Information Management and Information System at Harbin Institute of Technology(HIT). He is currently pursuing a Master’s degree in Financial Big Data at the Tsinghua University(THU) School of Economics and Management and the Shenzhen International Graduate School. He has been selected for the Erasmus Mundus Joint Master Degree and has received a potential scholarship opportunity(Erasmus+).
+Mr. Liu completed his Bachelor’s degree in Information Management and Information System at Harbin Institute of Technology(HIT). He is currently pursuing a Master’s degree in Financial Big Data at the Tsinghua University(THU) School of Economics and Management and the Shenzhen International Graduate School. He has been selected for the Erasmus Mundus Joint Master Degree Programme and has received a potential scholarship opportunity(Erasmus+).
 
 Previously, Mr. Liu worked as an Algorithm Engineer at a Fortune Global 500 company. His expertise includes the application of large models in edge computing scenarios, real-time communication of multimodal models, construction of multi-agent systems, and intelligent marketing. He is a key member of projects such as Samsung Bixby AI.
 
