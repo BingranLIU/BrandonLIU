@@ -24,18 +24,18 @@ Projects:
 ------
 1. LIU, B. Demystifying the black box: AI-enhanced logistic regression for lead scoring. Appl Intell 55, 574 (2025). [https://doi.org/10.1007/s10489-025-06430-4](https://doi.org/10.1007/s10489-025-06430-4)
 1. Liu, B. Applying Information Space Model Combined with Large Models to Public Governance. AP-PPN (2025). [https://www.asiapacificppn.org](https://www.asiapacificppn.org)
-1. Samsung Bixby RTC & Visual-Assistant, Core Members
-1. National Sovereignty Infra-LLMs Project - Core Member
-1. International Sales Forecasting System, Project Manager
-1. Marketing Intelligence Evaluation System, Project Manager
-1. Education Large Model Project - Member
+1. Samsung Bixby RTC & Visual-Assistant, Core Members (2024-2025)
+1. National Sovereignty Infra-LLMs Project, Core Member (2025)
+1. International Sales Forecasting System, Project Manager (2024)
+1. Education Large Model Project, Member (2024)
+1. Marketing Intelligence Evaluation System, Project Manager (2023)
 
 Experience:
 ------
 1. Tsinghua University School of Economics and Management & Shenzhen International Graduate School, Master’s in Financial Big Data (2024-present)
 1. Zhipu AI (Tsinghua GLM) – Global Business Center, AI Engineer (2024–Present)
 2. Chery Group (Fortune Global 500) – Digital & Information Technology Center, Algorithm Engineer (2023–2024)
-3. University of California, Los Angeles, Medicine and artificial intelligence, Short-term exchange (2022)
+3. University of California, Los Angeles, Medicine and Artificial Intelligence, Short-term exchange (2022)
 1. Harbin Institute of Technology, School of Economics and Management, Bachelor’s in Information Management and Information System (2019-2023)
 
 Other:
