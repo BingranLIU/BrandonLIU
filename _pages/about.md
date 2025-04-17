@@ -24,11 +24,11 @@ Projects:
 ------
 1. LIU, B. Demystifying the black box: AI-enhanced logistic regression for lead scoring. Appl Intell 55, 574 (2025). [https://doi.org/10.1007/s10489-025-06430-4](https://doi.org/10.1007/s10489-025-06430-4)
 1. Liu, B. Applying Information Space Model Combined with Large Models to Public Governance. AP-PPN (2025). [https://www.asiapacificppn.org](https://www.asiapacificppn.org)
-1. Samsung Bixby-RTC Voice Call and Video Call: The World’s First AI-Powered Video Dialogue Phone, Core Members
-1. Samsung Bixby AI Visual-Assistant, Core Members
-1. Multi-agent RAG System for Business Q&A, Core Member
-1. Sales Forecasting System Based on Time Series Analysis and Multiple Linear Regression, Project Manager
-1. Intelligent Evaluation of Marketing Leads, Project Manager
+1. Samsung Bixby RTC & Visual-Assistant, Core Members
+1. National Sovereignty Infra-LLMs Project - Core Member
+1. International Sales Forecasting System, Project Manager
+1. Marketing Intelligence Evaluation System, Project Manager
+1. Education Large Model Project - Member
 
 Experience:
 ------
