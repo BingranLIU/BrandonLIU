@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-Mr. Bingran Liu currently serves as an AI Engineer at Z.ai([Z.ai](https://z.ai)), primarily involved in the global deployment of the Tsinghua GLM. He is responsible for the application and implementation of LLMs. 
+Mr. Liu Bingran is currently employed as an AI Engineer at Z.ai([Z.ai](https://z.ai)), where his primary responsibilities encompass the global deployment and implementation of the Tsinghua GLM large language model framework. His work focuses on the practical application and operational deployment of large language models in various contexts.
 
-Mr. Liu completed his Bachelor’s degree in Information Management and Information System at Harbin Institute of Technology(HIT). He is currently pursuing a Master’s degree in Financial Big Data at the Tsinghua University(THU) School of Economics and Management and the Shenzhen International Graduate School. He has been selected for the Erasmus Mundus Joint Master Degree Programme and has received a potential scholarship opportunity(Erasmus+).
+Mr. Liu obtained his Bachelor's degree in Information Management and Information Systems from the Harbin Institute of Technology. He is presently pursuing a Master's degree in Financial Big Data through a collaborative program between the School of Economics and Management at Tsinghua University and the Shenzhen International Graduate School. His academic achievements include selection for the Erasmus Mundus Joint Master Degree Programme, accompanied by a prestigious Erasmus+ scholarship opportunity.
 
-Previously, Mr. Liu worked as an Algorithm Engineer at a Fortune Global 500 company. His expertise includes the application of large models in edge computing scenarios, real-time communication of multimodal models, construction of multi-agent systems, and intelligent marketing. He is a key member of projects such as Samsung Bixby AI.
+Prior to his current position, Mr. Liu served as an Algorithm Engineer at a Fortune Global 500 corporation. His technical expertise encompasses the application of large-scale models in edge computing environments, real-time communication protocols for multimodal models, multi-agent system architecture, and intelligent marketing solutions. He has been a key contributor to significant projects, including the Samsung Bixby AI initiative.
 
 Research Interests:
 ------
