@@ -24,6 +24,7 @@ Projects:
 ------
 1. LIU, B. Demystifying the black box: AI-enhanced logistic regression for lead scoring. Appl Intell 55, 574 (2025). [https://doi.org/10.1007/s10489-025-06430-4](https://doi.org/10.1007/s10489-025-06430-4)
 1. Liu, B. Applying Information Space Model Combined with Large Models to Public Governance. AP-PPN (2025). [https://www.asiapacificppn.org](https://www.asiapacificppn.org)
+1. AI and Disaster Prediction Project, Tohoku University, Japan, Core Members (2025)
 1. Samsung Bixby RTC & Visual-Assistant, Core Members (2024-2025)
 1. National Sovereignty Infra-LLMs Project, Core Member (2025)
 1. International Sales Forecasting System, Project Manager (2024)
