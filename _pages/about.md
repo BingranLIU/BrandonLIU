@@ -11,7 +11,7 @@ Mr. Liu Bingran is currently employed as an AI Engineer at Z.ai([Z.ai](https://z
 
 Mr. Liu obtained his Bachelor's degree in Information Management and Information Systems from the Harbin Institute of Technology. He is presently pursuing a Master's degree in Financial Big Data through a collaborative program between the School of Economics and Management at Tsinghua University and the Shenzhen International Graduate School. He has been selected for the Erasmus Mundus Joint Master Degree Programme and has received a potential scholarship(Erasmus+).
 
-Prior to his current position, Mr. Liu served as an Algorithm Engineer at a Fortune Global 500 corporation. His technical expertise encompasses the application of large-scale models in edge computing environments, real-time communication protocols for multimodal models, multi-agent system architecture, and intelligent marketing solutions. He has been a key contributor to significant projects, including the Samsung Bixby AI initiative.
+Prior to his current position, Mr. Liu served as an Algorithm Engineer at a Fortune Global 500 corporation. His technical expertise encompasses the application of large-scale models in edge computing environments, real-time communication protocols for multimodal models, multi-agent system architecture, and intelligent marketing solutions. He has been a key contributor to significant projects, including the Samsung Bixby AI initiative and the National Sovereignty Large Model.
 
 Research Interests:
 ------
@@ -24,7 +24,6 @@ Projects:
 ------
 1. LIU, B. Demystifying the black box: AI-enhanced logistic regression for lead scoring. Appl Intell 55, 574 (2025). [https://doi.org/10.1007/s10489-025-06430-4](https://doi.org/10.1007/s10489-025-06430-4)
 1. Liu, B. Applying Information Space Model Combined with Large Models to Public Governance. AP-PPN (2025). [https://www.asiapacificppn.org](https://www.asiapacificppn.org)
-1. AI and Disaster Prediction Project, Tohoku University, Japan, Core Members (2025)
 1. Samsung Bixby RTC & Visual-Assistant, Core Members (2024-2025)
 1. National Sovereignty Infra-LLMs Project, Core Member (2025)
 1. International Sales Forecasting System, Project Manager (2024)
@@ -34,9 +33,10 @@ Projects:
 Experience:
 ------
 1. Tsinghua University School of Economics and Management & Shenzhen International Graduate School, Master’s in Financial Big Data (2024-present)
+1. Tohoku University, Sendai, Japan, AI-Based Disaster Prediction, Short-term exchange (2025)
 1. Z.AI (Zhipu, TsinghuaGLM) – Global Business Center, AI Engineer (2024–Present)
 2. CHERY (Fortune Global 500) – Digital & Information Technology Center, Algorithm Engineer (2023–2024)
-3. University of California, Los Angeles, Medicine and Artificial Intelligence, Short-term exchange (2022)
+3. University of California, Los Angeles (UCLA), CA, USA, Medicine and Artificial Intelligence, Short-term exchange (2022)
 1. Harbin Institute of Technology, School of Economics and Management, Bachelor’s in Information Management and Information System (2019-2023)
 
 Other:
