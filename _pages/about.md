@@ -14,30 +14,30 @@ Prior to my current position, I served as an _**ML Algorithm Engineer**_ at a pu
 
 Research Interests:
 ------
-1. _Multi-agent systems based on large models_
-2. _Architectures combining large language models with machine learning_
-3. _Multimodal large models in RTC scenarios and complex functional invocations in models_
-4. _Large model safety - including ethical guidelines and guardrail engineering_
+* _Multi-agent systems based on large models_
+* _Architectures combining large language models with machine learning_
+* _Multimodal large models in RTC scenarios and complex functional invocations in models_
+* _Large model safety - including ethical guidelines and guardrail engineering_
 
 Projects:
 ------
-1. _**Samsung Bixby RTC & Visual-Assistant**_, Core Members, Beijing & Guangzhou  (2024-2025)
-2. _**National Sovereignty Infra-LLMs Project**_, Core Member, Beijing & Kuala Lumpur  (2025)
-3. _**Knowledge Graph-based Education Large Model Project**_, Member, Beijing  (2024)
-4. _**Global Sales Intelligence System**_, Project Manager, Nanjing  (2023)
+* _**Samsung Bixby RTC & Visual-Assistant**_, Core Members, Beijing & Guangzhou  (2024-2025)
+* _**National Sovereignty Infra-LLMs Project**_, Core Member, Beijing & Kuala Lumpur  (2025)
+* _**Knowledge Graph-based Education Large Model Project**_, Member, Beijing  (2024)
+* _**Global Sales Intelligence System**_, Project Manager, Nanjing  (2023)
 
-1. _[LIU, B. Demystifying the black box: AI-enhanced logistic regression for lead scoring](https://doi.org/10.1007/s10489-025-06430-4)._ Appl Intell 55, 574, JCR Q2. (2025)
-2. _[Liu, B. Applying Information Space Model Combined with Large Models to Public Governance](https://www.asiapacificppn.org)._ AP-PPN. (2025)
+* _[LIU, B. Demystifying the black box: AI-enhanced logistic regression for lead scoring](https://doi.org/10.1007/s10489-025-06430-4)._ Appl Intell 55, 574, JCR Q2. (2025)
+* _[Liu, B. Applying Information Space Model Combined with Large Models to Public Governance](https://www.asiapacificppn.org)._ AP-PPN. (2025)
 
 Experience:
 ------
-1. _**Tsinghua University School of Economics and Management & Shenzhen International Graduate School**_, Master's in Financial Big Data (2024-present)
-2. *Tohoku University, Sendai, Japan, AI-Based Disaster Prediction, Short-term exchange (2025)*
-3. _**Z.AI (Zhipu, TsinghuaGLM) – Global Business Center**_, AI Engineer (2024–Present)
-4. _**CHERY (Fortune Global 500) – Digital & Information Technology Center**_, Algorithm Engineer (2023–2024)
-5. *University of California, Los Angeles (UCLA), CA, USA, Medicine and Artificial Intelligence, Short-term exchange (2022)*
-6. _**Harbin Institute of Technology, School of Economics and Management**_, Bachelor's in Information Management and Information System (2019-2023)
+* _**Tsinghua University School of Economics and Management & Shenzhen International Graduate School**_, Master's in Financial Big Data (2024-present)
+* *Tohoku University, Sendai, Japan, AI-Based Disaster Prediction, Short-term exchange (2025)*
+* _**Z.AI (Zhipu, TsinghuaGLM) – Global Business Center**_, AI Engineer (2024–Present)
+* _**CHERY (Fortune Global 500) – Digital & Information Technology Center**_, Algorithm Engineer (2023–2024)
+* *University of California, Los Angeles (UCLA), CA, USA, Medicine and Artificial Intelligence, Short-term exchange (2022)*
+* _**Harbin Institute of Technology, School of Economics and Management**_, Bachelor's in Information Management and Information System (2019-2023)
 
 Other:
 ------
-1. Graduate Industry Mentor – _**Li Tie**_, Executive Director and CFO of Li Auto 
+* Graduate Industry Mentor – _**Li Tie**_, Executive Director and CFO of Li Auto 
