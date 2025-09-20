@@ -6,12 +6,11 @@ redirect_from:
   - /about/
   - /about.html
 ---
+Currently serving as an AI Engineer at Z.ai([Z.ai](https://z.ai)), I lead the global deployment and implementation of the Tsinghua GLM large language model framework, focusing on practical applications and operational execution across diverse environments.
 
-Mr. Liu Bingran is currently employed as an AI Engineer at Z.ai([Z.ai](https://z.ai)), where his primary responsibilities encompass the global deployment and implementation of the Tsinghua GLM large language model framework. His work focuses on the practical application and operational deployment of large language models in various contexts.
+My academic background includes a Bachelor’s degree in Information Management and Information Systems from Harbin Institute of Technology. I am currently pursuing a Master’s in Financial Big Data through a joint program between Tsinghua University’s School of Economics and Management and the Shenzhen International Graduate School. I have been selected for the Erasmus Mundus Joint Master Degree Programme with an Erasmus+ scholarship.
 
-Mr. Liu obtained his Bachelor's degree in Information Management and Information Systems from the Harbin Institute of Technology. He is presently pursuing a Master's degree in Financial Big Data through a collaborative program between the School of Economics and Management at Tsinghua University and the Shenzhen International Graduate School. He has been selected for the Erasmus Mundus Joint Master Degree Programme and has received a potential scholarship(Erasmus+).
-
-Prior to his current position, Mr. Liu served as an Algorithm Engineer at a Fortune Global 500 corporation. His technical expertise encompasses the application of large-scale models in edge computing environments, real-time communication protocols for multimodal models, multi-agent system architecture, and intelligent marketing solutions. He has been a key contributor to significant projects, including the Samsung Bixby AI initiative and the National Sovereignty Large Model.
+Professionally, I previously worked as an Algorithm Engineer at a Fortune Global 500 company, where I specialized in data mining and machine learning algorithm engineering. This experience, followed by my role at a large model company, has honed my expertise in deploying large-scale models for edge computing, developing real-time communication protocols for multimodal systems, designing multi-agent architectures, and creating intelligent marketing solutions. I have contributed significantly to key projects including the Samsung Bixby AI initiative and the National Sovereignty Large Model.
 
 Research Interests:
 ------
