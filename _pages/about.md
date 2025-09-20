@@ -32,10 +32,10 @@ Projects:
 Experience:
 ------
 1. Tsinghua University School of Economics and Management & Shenzhen International Graduate School, Master’s in Financial Big Data (2024-present)
-1. *Tohoku University, Sendai, Japan, AI-Based Disaster Prediction, Short-term exchange (2025)
+1. <i>*Tohoku University, Sendai, Japan, AI-Based Disaster Prediction, Short-term exchange (2025)</i>
 1. Z.AI (Zhipu, TsinghuaGLM) – Global Business Center, AI Engineer (2024–Present)
 1. CHERY (Fortune Global 500) – Digital & Information Technology Center, Algorithm Engineer (2023–2024)
-1. *University of California, Los Angeles (UCLA), CA, USA, Medicine and Artificial Intelligence, Short-term exchange (2022)
+1. <i>*University of California, Los Angeles (UCLA), CA, USA, Medicine and Artificial Intelligence, Short-term exchange (2022)</i>
 1. Harbin Institute of Technology, School of Economics and Management, Bachelor’s in Information Management and Information System (2019-2023)
 
 Other:
