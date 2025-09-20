@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am currently employed as an AI Engineer at leading large language model company Z.ai([Z.ai](https://z.ai)), where my primary responsibilities encompass the global deployment and implementation of the Tsinghua GLM large language model framework, along with the application of AI technologies. My work focuses on the practical implementation of large language model capabilities in global contexts.
+I am currently employed as an AI Engineer at leading large language model company [Z.ai](https://z.ai), where my primary responsibilities encompass the global deployment and commercialization of the Tsinghua GLM large language model. I have participated in or led international implementation, fine-tuning, application development and architectural design of the model, collaborating deeply with multinational corporations including Y, Samsung, dedicated to efficiently transforming large model technical capabilities into practical solutions for various industries globally.
 
 I obtained my Bachelor's degree in Information Management and Information System from the Harbin Institute of Technology. I am presently pursuing a Master's degree in Financial Big Data through a collaborative program between the School of Economics and Management at Tsinghua University and the Shenzhen International Graduate School. I have been selected for the Erasmus Mundus Joint Master Degree Programme and have been awarded a scholarship (Erasmus+).
 
