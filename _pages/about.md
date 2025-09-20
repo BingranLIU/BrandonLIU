@@ -6,11 +6,11 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I currently serve as an AI Engineer at Z.ai([Z.ai](https://z.ai)), where my primary responsibilities include the global deployment and implementation of the Tsinghua GLM large language model framework. My work centers on advancing the practical application and operational deployment of large language models across diverse contexts.
+I am currently employed as an AI Engineer at leading large language model company Z.ai([Z.ai](https://z.ai)), where my primary responsibilities encompass the global deployment and implementation of the Tsinghua GLM large language model framework, along with the application of AI technologies. My work focuses on the practical implementation of large language model capabilities in global contexts.
 
-My academic background includes a Bachelor’s degree in Information Management and Information Systems from Harbin Institute of Technology. I am currently pursuing a Master’s in Financial Big Data through a joint program between Tsinghua University’s School of Economics and Management and the Shenzhen International Graduate School. I have been selected for the Erasmus Mundus Joint Master Degree Programme with an Erasmus+ scholarship.
+I obtained my Bachelor's degree in Information Management and Information Systems from the Harbin Institute of Technology. I am presently pursuing a Master's degree in Financial Big Data through a collaborative program between the School of Economics and Management at Tsinghua University and the Shenzhen International Graduate School. I have been selected for the Erasmus Mundus Joint Master Degree Programme and have been awarded a scholarship (Erasmus+).
 
-Professionally, I previously worked as an Algorithm Engineer at a Fortune Global 500 company, where I specialized in data mining and machine learning algorithm engineering. This experience, followed by my role at a large model company, has honed my expertise in deploying large-scale models for edge computing, developing real-time communication protocols for multimodal systems, designing multi-agent architectures, and creating intelligent marketing solutions. I have contributed significantly to key projects including the Samsung Bixby AI initiative and the National Sovereignty Large Model.
+Prior to my current position, I served as an Algorithm Engineer at a publicly-listed Fortune Global 500 corporation, responsible for machine learning algorithm research. My technical expertise encompasses the application of large-scale models in edge computing environments, real-time communication protocols for multimodal models, multi-agent system architecture, and intelligent marketing solutions. I have been a key contributor to significant projects, including the Samsung Bixby AI initiative and the National Sovereignty Large Model Project.
 
 Research Interests:
 ------
