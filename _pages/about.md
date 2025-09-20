@@ -15,28 +15,29 @@ Prior to my current position, I served as an Algorithm Engineer at a publicly-li
 Research Interests:
 ------
 1. Multi-agent systems based on large models
-1. Architectures combining large language models with machine learning
-1. Multimodal large models in RTC scenarios and complex functional invocations in models
-1. Large model safety - including ethical guidelines and guardrail engineering
+2. Architectures combining large language models with machine learning
+3. Multimodal large models in RTC scenarios and complex functional invocations in models
+4. Large model safety - including ethical guidelines and guardrail engineering
 
 Projects:
 ------
 1. LIU, B. Demystifying the black box: AI-enhanced logistic regression for lead scoring. Appl Intell 55, 574 (2025). [https://doi.org/10.1007/s10489-025-06430-4](https://doi.org/10.1007/s10489-025-06430-4)
-1. Liu, B. Applying Information Space Model Combined with Large Models to Public Governance. AP-PPN (2025). [https://www.asiapacificppn.org](https://www.asiapacificppn.org)
-1. Samsung Bixby RTC & Visual-Assistant, Core Members (2024-2025)
-1. National Sovereignty Infra-LLMs Project, Core Member (2025)
-1. International Sales Forecasting System, Project Manager (2024)
-1. Education Large Model Project, Member (2024)
-1. Marketing Intelligence Evaluation System, Project Manager (2023)
+2. Liu, B. Applying Information Space Model Combined with Large Models to Public Governance. AP-PPN (2025). [https://www.asiapacificppn.org](https://www.asiapacificppn.org)
+------
+1. Samsung Bixby RTC & Visual-Assistant, Core Members (2024-2025) Beijing, Guangzhou
+2. National Sovereignty Infra-LLMs Project, Core Member (2025) Beijing, Kuala Lumpur
+3. Knowledge Graph-based Education Large Model Project, Member (2024) Beijing
+4. Marketing Intelligence Evaluation & International Sales Forecasting System, Project Manager (2023) Nanjing
 
 Experience:
 ------
 1. Tsinghua University School of Economics and Management & Shenzhen International Graduate School, Master’s in Financial Big Data (2024-present)
-1. Tohoku University, Sendai, Japan, AI-Based Disaster Prediction, Short-term exchange (2025)
 1. Z.AI (Zhipu, TsinghuaGLM) – Global Business Center, AI Engineer (2024–Present)
-2. CHERY (Fortune Global 500) – Digital & Information Technology Center, Algorithm Engineer (2023–2024)
-3. University of California, Los Angeles (UCLA), CA, USA, Medicine and Artificial Intelligence, Short-term exchange (2022)
+1. CHERY (Fortune Global 500) – Digital & Information Technology Center, Algorithm Engineer (2023–2024)
 1. Harbin Institute of Technology, School of Economics and Management, Bachelor’s in Information Management and Information System (2019-2023)
+------
+1. Tohoku University, Sendai, Japan, AI-Based Disaster Prediction, Short-term exchange (2025)
+1. University of California, Los Angeles (UCLA), CA, USA, Medicine and Artificial Intelligence, Short-term exchange (2022)
 
 Other:
 ------
