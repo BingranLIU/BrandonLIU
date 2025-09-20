@@ -10,7 +10,7 @@ I am currently employed as an **AI Engineer** at leading large language model co
 
 I obtained my **Bachelor's degree in Information Management and Information System** from the **Harbin Institute of Technology**. I am presently pursuing a **Master's degree in Financial Big Data** through a collaborative program between the School of Economics and Management at Tsinghua University and the Shenzhen International Graduate School. I have been selected for the ***Erasmus Mundus Joint Master Degree Programme*** and have been awarded a scholarship (Erasmus+).
 
-Prior to my current position, I served as an **Algorithm Engineer** at a publicly-listed Fortune Global 500 corporation, responsible for machine learning algorithm research. My technical expertise encompasses the application of large-scale models in edge computing environments, real-time communication protocols for multimodal models, multi-agent system architecture, and intelligent marketing solutions. I have been a key contributor to significant projects, including the **Samsung Bixby AI initiative** and the **National Sovereignty Large Model Project**.
+Prior to my current position, I served as an **ML Algorithm Engineer** at a publicly-listed Fortune Global 500 corporation, responsible for machine learning algorithm research. My technical expertise encompasses the application of large-scale models in edge computing environments, real-time communication protocols for multimodal models, multi-agent system architecture, and intelligent marketing solutions. I have been a key contributor to significant projects, including the **Samsung Bixby AI initiative** and the **National Sovereignty Large Model Project**.
 
 **Research Interests:**
 ------
