@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am currently employed as an _**Artificial Intelligence Engineer**_ at leading large language model company [Z.ai](https://z.ai), where my primary responsibilities encompass the global deployment and commercialization of the *Tsinghua GLM large language model*. I have participated in or led international implementation, fine-tuning, application development and architectural design of the model, collaborating deeply with multinational corporations including Y, Samsung, dedicated to efficiently transforming large model technical capabilities into practical solutions for various industries globally.
+I am currently employed as an _**Artificial Intelligence Engineer**_ at leading _**large language model company [Z.ai](https://z.ai)**_, where my primary responsibilities encompass the global deployment and commercialization of the *Tsinghua GLM large language model*. I have participated in or led international implementation, fine-tuning, application development and architectural design of the model, collaborating deeply with multinational corporations including Y, Samsung, dedicated to efficiently transforming large model technical capabilities into practical solutions for various industries globally.
 
 I obtained my _**Bachelor's degree in Information Management and Information System**_ from the _**Harbin Institute of Technology**_. I am currently pursuing a _**Master's degree in Financial Big Data**_ through a collaborative program between _**Tsinghua University's**_ School of Economics and Management and Shenzhen International Graduate School, while also participating in academic collaborations with overseas universities based on big data. I have been selected for the _**Erasmus Mundus Joint Master Degree Programme**_ and have been awarded a scholarship (Erasmus+).
 
@@ -24,7 +24,7 @@ Projects:
 1. _**Samsung Bixby RTC & Visual-Assistant**_, Core Members, Beijing & Guangzhou  (2024-2025)
 2. _**National Sovereignty Infra-LLMs Project**_, Core Member, Beijing & Kuala Lumpur  (2025)
 3. _**Knowledge Graph-based Education Large Model Project**_, Member, Beijing  (2024)
-4. _**Marketing Intelligence Evaluation & International Sales Forecasting System**_, Project Manager, Nanjing  (2023)
+4. _**Global Sales Intelligence System**_, Project Manager, Nanjing  (2023)
 
 1. _[LIU, B. Demystifying the black box: AI-enhanced logistic regression for lead scoring](https://doi.org/10.1007/s10489-025-06430-4)._ Appl Intell 55, 574, JCR Q2. (2025)
 2. _[Liu, B. Applying Information Space Model Combined with Large Models to Public Governance](https://www.asiapacificppn.org)._ AP-PPN. (2025)
