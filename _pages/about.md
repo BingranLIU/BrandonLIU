@@ -16,8 +16,8 @@ Research Interests:
 ------
 1. Multi-agent systems based on large models
 1. Architectures combining large language models with machine learning
-1. Multimodal large models in RTC scenarios
-1. Complex functional invocations in models
+1. Multimodal large models in RTC scenarios and complex functional invocations in models
+1. Large model safety - including ethical guidelines and guardrail engineering
 
 Projects:
 ------
