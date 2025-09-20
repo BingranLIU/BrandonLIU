@@ -26,8 +26,8 @@ Projects:
 3. _**Knowledge Graph-based Education Large Model Project**_, Member, Beijing  (2024)
 4. _**Marketing Intelligence Evaluation & International Sales Forecasting System**_, Project Manager, Nanjing  (2023)
 
-1. _LIU, B. Demystifying the black box: AI-enhanced logistic regression for lead scoring_. Appl Intell 55, 574, JCR Q2. [https://doi.org/10.1007/s10489-025-06430-4](https://doi.org/10.1007/s10489-025-06430-4)  (2025)
-2. _Liu, B. Applying Information Space Model Combined with Large Models to Public Governance_. AP-PPN. [https://www.asiapacificppn.org](https://www.asiapacificppn.org)  (2025)
+1. _[LIU, B. Demystifying the black box: AI-enhanced logistic regression for lead scoring](https://doi.org/10.1007/s10489-025-06430-4)._ Appl Intell 55, 574, JCR Q2. (2025)
+2. _[Liu, B. Applying Information Space Model Combined with Large Models to Public Governance](https://www.asiapacificppn.org)._ AP-PPN. (2025)
 
 Experience:
 ------
