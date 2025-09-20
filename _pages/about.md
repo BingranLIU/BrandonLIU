@@ -40,5 +40,4 @@ Experience:
 
 Other:
 ------
-1. _**Graduate Industry Mentor**_ – Li Tie, Executive Director and CFO of Li Auto 
-2. Admitted to Erasmus Joint Master Program and IP-Paris (2023)
+1. Graduate Industry Mentor – _**Li Tie**_, Executive Director and CFO of Li Auto 
