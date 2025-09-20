@@ -21,13 +21,13 @@ Research Interests:
 
 Projects:
 ------
-1. _Samsung Bixby RTC & Visual-Assistant_, Core Members (2024-2025)  Beijing, Guangzhou
-2. _National Sovereignty Infra-LLMs Project_, Core Member (2025)  Beijing, Kuala Lumpur
-3. _Knowledge Graph-based Education Large Model Project_, Member (2024)  Beijing
-4. _Marketing Intelligence Evaluation & International Sales Forecasting System_, Project Manager (2023)  Nanjing
+1. _**Samsung Bixby RTC & Visual-Assistant**_, Core Members, Beijing & Guangzhou  (2024-2025)
+2. _**National Sovereignty Infra-LLMs Project**_, Core Member, Beijing & Kuala Lumpur  (2025)
+3. _**Knowledge Graph-based Education Large Model Project**_, Member, Beijing  (2024)
+4. _**Marketing Intelligence Evaluation & International Sales Forecasting System**_, Project Manager, Nanjing  (2023)
 
-1. LIU, B. Demystifying the black box: AI-enhanced logistic regression for lead scoring. Appl Intell 55, 574 (2025, JCR Q2). [https://doi.org/10.1007/s10489-025-06430-4](https://doi.org/10.1007/s10489-025-06430-4)
-2. Liu, B. Applying Information Space Model Combined with Large Models to Public Governance. AP-PPN (2025). [https://www.asiapacificppn.org](https://www.asiapacificppn.org)
+1. _LIU, B. Demystifying the black box: AI-enhanced logistic regression for lead scoring_. Appl Intell 55, 574, JCR Q2. [https://doi.org/10.1007/s10489-025-06430-4](https://doi.org/10.1007/s10489-025-06430-4)  (2025)
+2. _Liu, B. Applying Information Space Model Combined with Large Models to Public Governance_. AP-PPN. [https://www.asiapacificppn.org](https://www.asiapacificppn.org)  (2025)
 
 Experience:
 ------
