@@ -14,10 +14,11 @@ Prior to my current position, I served as an _**ML Algorithm Engineer**_ at a pu
 
 Research Interests:
 ------
-* _Multi-agent systems based on large models_
-* _Architectures combining large language models with machine learning_
-* _Multimodal large models in RTC scenarios and complex functional invocations in models_
+* _Multi-turn dialogue systems and complex functional invocations in models_
+* _Architectures combining large language models with machine learning and graph retrieval_
+* _Multimodal large models in RTC scenarios and multi-agent systems_
 * _Large model safety - including ethical guidelines and guardrail engineering_
+* _Commercialization of large models in low-resource language countries_
 
 Projects:
 ------
@@ -33,11 +34,11 @@ Experience:
 ------
 * _**Tsinghua University,**_ School of Economics and Management & Shenzhen International Graduate School, Master's in Financial Big Data (2024-present)
 * *Tohoku University, Sendai, Japan, AI-Based Disaster Prediction, Short-term exchange (2025)*
-* _**Z.AI (Zhipu, TsinghuaGLM),**_ Global Business Center, AI Engineer (2024–Present)
-* _**CHERY (Fortune Global 500),**_ Digital & Information Technology Center, Algorithm Engineer (2023–2024)
+* _**[Z.AI (Zhipu, TsinghuaGLM)](https://en.wikipedia.org/wiki/Z.ai),**_ Global Business Center, AI Engineer (2024–Present)
+* _**[CHERY (Fortune Global 500)](https://en.wikipedia.org/wiki/Chery),**_ Digital & Information Technology Center, Algorithm Engineer (2023–2024)
 * *University of California, Los Angeles (UCLA), CA, USA, Medicine and Artificial Intelligence, Short-term exchange (2022)*
 * _**Harbin Institute of Technology,**_ School of Economics and Management, Bachelor's in Information Management and Information System (2019-2023)
 
 Other:
 ------
-* Graduate Industry Mentor – _**Li Tie**_, Executive Director and CFO of Li Auto 
+* Graduate Industry Mentor – _**Li Tie**_, Executive Director and CFO of _**[Li Auto](https://en.wikipedia.org/wiki/Li_Auto)**_.
