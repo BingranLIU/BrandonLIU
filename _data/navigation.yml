@@ -9,11 +9,3 @@ main:
     url: /
   - title: "CV"
     url: /cv/
-  - title: "Publications"
-    url: /publications/
-  - title: "Portfolio"
-    url: /portfolio/
-  - title: "Talks"
-    url: /talks/
-  - title: "Teaching"
-    url: /teaching/
