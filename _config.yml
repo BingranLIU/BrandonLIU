@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-name                     : &name "Bingran LIU"
+name                     : &name "Bingran LIU (刘冰燃)"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -17,7 +17,7 @@ name                     : &name "Bingran LIU"
 author:
   # Biographic information
   avatar           : "bingranliu.jpg"
-  name             : "Bingran(Brandon) LIU & 刘冰燃"
+  name             : "Brandon Liu (刘冰燃)"
   pronouns         : # example: "she/her"  
   bio              : "Per Aspera Ad Astra"
   location         : "Beijing & Kuala Lumpur"
