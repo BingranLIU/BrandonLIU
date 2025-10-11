@@ -6,12 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-
 {% include base_path %}
-
-## Curriculum Vitae
-
-You can view and download my CV below:
 
 <div style="text-align: center; margin: 20px 0;">
   <a href="{{ base_path }}/files/BingranLIU_CV%20202509.pdf" target="_blank" class="btn btn--primary btn--large">
