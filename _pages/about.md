@@ -35,8 +35,8 @@ Experience:
 ------
 * _**Tsinghua University,**_ School of Economics and Management & Shenzhen International Graduate School, Master's in Financial Big Data (2024-present)
 - *Tohoku University, Sendai, Japan, AI-Based Disaster Prediction, Short-term exchange (2025)*
-* _**[Z.AI (Zhipu, TsinghuaGLM)](https://en.wikipedia.org/wiki/Z.ai),**_ Global Business Center, AI Engineer (2024–Present)
-* _**[CHERY (Fortune Global 500)](https://en.wikipedia.org/wiki/Chery),**_ Digital & Information Technology Center, Algorithm Engineer (2023–2024)
+* _**[Z.AI (Zhipu, TsinghuaGLM), 02513.HK](https://en.wikipedia.org/wiki/Z.ai),**_ Global Business Center, AI Engineer (2024–Present)
+* _**[CHERY (Fortune Global 500), 9973.HK](https://en.wikipedia.org/wiki/Chery),**_ Digital & Information Technology Center, Algorithm Engineer (2023–2024)
 - *University of California, Los Angeles (UCLA), CA, USA, Medicine and Artificial Intelligence, Short-term exchange (2022)*
 * _**Harbin Institute of Technology,**_ School of Economics and Management, Bachelor's in Information Management and Information System (2019-2023)
 
