@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>Brandon Liu 刘冰燃 · AI Engineer & Researcher · Per aspera ad astra</title>
+    <meta name="description" content="Brandon Liu (刘冰燃 / Bingran Liu) — AI Engineer at Z.ai. Building sovereign LLMs, agentic systems, multimodal real-time models. Tsinghua & HIT. Per aspera ad astra.">
+    <meta name="keywords" content="Brandon Liu, Bingran Liu, 刘冰燃, 冰燃, AI Engineer, Z.ai, Zhipu, 智谱, 清华大学, Tsinghua, large language model, sovereign LLM, agentic systems, multimodal, GLM, Samsung S25, GraphRAG, Harbin Institute of Technology, HIT, me.iamllm.top">
+    <meta name="author" content="Brandon Liu (刘冰燃)">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://me.iamllm.top/">
+
+    <!-- Open Graph (social sharing previews) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://me.iamllm.top/">
+    <meta property="og:title" content="Brandon Liu 刘冰燃 — AI Engineer & Researcher">
+    <meta property="og:description" content="AI Engineer at Z.ai. Sovereign LLMs, agentic systems, multimodal real-time models. Tsinghua & HIT. Per aspera ad astra.">
+    <meta property="og:image" content="avatar.jpg">
+    <meta property="og:site_name" content="Brandon Liu">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="profile:first_name" content="Brandon">
+    <meta property="profile:last_name" content="Liu">
+    <meta property="profile:username" content="brandonliu">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brandon Liu 刘冰燃 — AI Engineer & Researcher">
+    <meta name="twitter:description" content="AI Engineer at Z.ai. Sovereign LLMs, agentic systems, multimodal real-time models. Per aspera ad astra.">
+    <meta name="twitter:image" content="avatar.jpg">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Structured data: tell search engines exactly who this is -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Brandon Liu",
+        "alternateName": ["刘冰燃", "冰燃", "Bingran Liu", "Liu Bingran"],
+        "givenName": "Brandon",
+        "familyName": "Liu",
+        "jobTitle": "AI Engineer",
+        "url": "https://me.iamllm.top/",
+        "image": "avatar.jpg",
+        "email": "mailto:brandonliubingran@gmail.com",
+        "alumniOf": [
+            {"@type": "CollegeOrUniversity", "name": "Tsinghua University", "url": "https://www.tsinghua.edu.cn"},
+            {"@type": "CollegeOrUniversity", "name": "Harbin Institute of Technology", "url": "https://www.hit.edu.cn"}
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Z.ai",
+            "url": "https://z.ai"
+        },
+        "knowsAbout": ["Large Language Models", "Agentic Systems", "Sovereign LLMs", "Multimodal AI", "Real-time Multimodal Conversation", "GraphRAG", "Multi-agent Systems"],
+        "sameAs": [
+            "https://www.linkedin.com/in/brandon-liu-1587a9324/",
+            "https://bingranliu.github.io/BrandonLIU"
+        ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fafaf8;
+            --text: #1a1a1a;
+            --text-2: #3d3d3d;
+            --text-3: #777;
+            --rule: #d4d4d0;
+            --accent: #2d3748;
+            --display: 'Cormorant Garamond', Georgia, serif;
+            --body: 'Source Serif 4', Georgia, serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--body);
+            font-weight: 400;
+            font-size: 18px;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.75;
+        }
+
+        /* ── Layout ── */
+        main {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 100px 32px 140px;
+        }
+
+        /* ── Links ── */
+        a {
+            color: inherit;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 0.5px;
+            text-decoration-color: rgba(26,26,26,0.3);
+            transition: text-decoration-color 0.15s;
+        }
+        a:hover {
+            text-decoration-color: rgba(26,26,26,0.8);
+        }
+
+        /* ── Animations ── */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(28px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Hero entrance */
+        .hero-content > * {
+            opacity: 0;
+            animation: fadeUp 0.8s ease-out forwards;
+        }
+        .hero-name     { animation-delay: 0s; }
+        .hero-cn       { animation-delay: 0.1s; }
+        .hero-detail   { animation-delay: 0.2s; }
+        .hero-motto    { animation-delay: 0.3s; }
+        .hero-contact  { animation-delay: 0.4s; }
+        .hero-illust   { opacity: 0; animation: fadeUp 0.8s ease-out 0.15s forwards; }
+
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .rule.reveal {
+            transform: none;
+        }
+
+        /* ── Hero ── */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 48px;
+            margin-bottom: 88px;
+        }
+        .hero-content { flex: 1; }
+        .hero-avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .hero-avatar:hover {
+            transform: scale(1.05);
+        }
+        .hero-name {
+            font-family: var(--display);
+            font-weight: 300;
+            font-size: clamp(2.8rem, 8vw, 4.4rem);
+            letter-spacing: 0.02em;
+            line-height: 1.08;
+        }
+        .hero-cn {
+            font-family: var(--display);
+            font-weight: 300;
+            font-size: 1.2rem;
+            color: var(--text-2);
+            letter-spacing: 0.18em;
+            margin-top: 8px;
+        }
+        .hero-detail {
+            margin-top: 32px;
+            font-size: 1rem;
+            color: var(--text-2);
+            line-height: 1.9;
+        }
+        .hero-motto {
+            margin-top: 10px;
+            font-family: var(--display);
+            font-style: italic;
+            font-weight: 300;
+            font-size: 1.05rem;
+            color: var(--text-3);
+            letter-spacing: 0.03em;
+        }
+        .hero-illust {
+            flex-shrink: 0;
+            margin-top: 16px;
+        }
+        .hero-contact {
+            margin-top: 20px;
+            display: flex;
+            gap: 14px;
+            align-items: center;
+        }
+        .hero-contact a {
+            color: var(--text-3);
+            text-decoration: none;
+            transition: color 0.15s;
+            font-size: 0.85rem;
+        }
+        .hero-contact a:hover {
+            color: var(--text);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ── Sections ── */
+        section { margin-bottom: 64px; }
+
+        .section-label {
+            font-family: var(--display);
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--text);
+            margin-bottom: 28px;
+            letter-spacing: 0.01em;
+        }
+
+        .rule {
+            border: none;
+            border-top: 1px solid var(--rule);
+            margin: 56px 0;
+        }
+
+        /* ── About ── */
+        .about p {
+            font-size: 1rem;
+            color: var(--text-2);
+            line-height: 1.85;
+            margin-bottom: 18px;
+        }
+        .about p:last-child { margin-bottom: 0; }
+
+        /* ── Projects ── */
+        .project {
+            margin-bottom: 36px;
+        }
+        .project:last-child { margin-bottom: 0; }
+
+        .project-title {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 4px;
+        }
+        .project-meta {
+            font-style: italic;
+            font-size: 0.92rem;
+            color: var(--text-3);
+            margin-bottom: 8px;
+        }
+        .project-desc {
+            font-size: 0.95rem;
+            color: var(--text-2);
+            line-height: 1.75;
+        }
+
+        /* ── Research ── */
+        .research-list { list-style: none; }
+        .research-list li {
+            font-size: 0.95rem;
+            color: var(--text-2);
+            padding: 10px 0;
+            border-bottom: 1px solid var(--rule);
+            line-height: 1.65;
+        }
+        .research-list li:last-child { border-bottom: none; }
+
+        /* ── Publications ── */
+        .pub { margin-bottom: 24px; }
+        .pub:last-child { margin-bottom: 0; }
+
+        .pub-badge {
+            font-style: italic;
+            font-weight: 300;
+            font-size: 0.92rem;
+            color: var(--text-3);
+            margin-right: 4px;
+        }
+        .pub-title {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: var(--text);
+            line-height: 1.6;
+            margin-bottom: 4px;
+        }
+        .pub-meta {
+            font-size: 0.85rem;
+            color: var(--text-3);
+        }
+
+        /* ── Experience ── */
+        .exp {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--rule);
+        }
+        .exp:last-of-type { border-bottom: none; }
+
+        .exp-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 2px;
+        }
+        .exp-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--display);
+            font-size: 1.08rem;
+            font-weight: 400;
+            color: var(--text);
+        }
+        .exp-year {
+            font-style: italic;
+            font-size: 0.92rem;
+            color: var(--text-3);
+            white-space: nowrap;
+        }
+        .exp-logo {
+            flex-shrink: 0;
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+        .exp-sub {
+            font-family: var(--body);
+            font-style: italic;
+            font-size: 0.8rem;
+            color: var(--text-3);
+        }
+        .exp-org {
+            font-size: 0.9rem;
+            color: var(--text-3);
+        }
+
+        /* Work entries: display serif */
+        .exp-work .exp-title {
+            font-family: var(--display);
+            font-weight: 600;
+        }
+
+        /* Education entries: body serif, italic */
+        .exp-edu .exp-title {
+            font-family: var(--body);
+            font-style: italic;
+            font-weight: 400;
+            color: var(--text-2);
+        }
+
+        .note {
+            margin-top: 24px;
+            padding: 14px 18px;
+            border-left: 2px solid var(--rule);
+            font-size: 0.9rem;
+            color: var(--text-2);
+            line-height: 1.65;
+        }
+
+        /* ── Other ── */
+        .other-item {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--rule);
+        }
+        .other-item:last-child { border-bottom: none; }
+        .other-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 16px;
+        }
+        .other-title {
+            font-size: 0.92rem;
+            color: var(--text-2);
+        }
+        .other-title strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+        .other-item.mentor-note {
+            padding: 10px 0;
+            border-bottom: none;
+        }
+        .other-item.mentor-note .other-title {
+            font-size: 0.82rem;
+            color: var(--text-3);
+            font-style: italic;
+            opacity: 0.7;
+        }
+        .other-item.mentor-note .other-title a {
+            color: var(--text-3);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+        .other-year {
+            font-style: italic;
+            font-size: 0.85rem;
+            color: var(--text-3);
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .other-desc {
+            margin-top: 5px;
+            font-style: italic;
+            font-size: 0.85rem;
+            color: var(--text-3);
+            line-height: 1.65;
+        }
+
+        /* ── Planet Constellation ── */
+        .planets {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        main { position: relative; z-index: 1; }
+
+        .planet-bg {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(26, 26, 26, 0.04);
+        }
+        .planet-orbit {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .planet-orbit path {
+            fill: none;
+            stroke: rgba(26, 26, 26, 0.06);
+            stroke-width: 1;
+            stroke-dasharray: 2 8;
+            stroke-linecap: round;
+        }
+
+        .planet-node {
+            position: absolute;
+            border-radius: 50%;
+            /* designed sphere: soft radial shading, lighter on top-left */
+            background: radial-gradient(circle at 32% 30%,
+                rgba(26, 26, 26, 0.22) 0%,
+                rgba(26, 26, 26, 0.12) 55%,
+                rgba(26, 26, 26, 0.04) 100%);
+        }
+
+        /* The single traveling focus planet — keeps its own depth shading */
+        .planet-focus {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            margin: -15px 0 0 -15px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 32% 30%,
+                rgba(70, 72, 80, 0.55) 0%,
+                rgba(45, 47, 55, 0.40) 55%,
+                rgba(26, 26, 26, 0.20) 100%);
+            top: 0;
+            left: 0;
+            will-change: transform;
+            transition: opacity 0.4s ease;
+        }
+        .planet-focus::after {
+            content: '';
+            position: absolute;
+            inset: -6px;
+            border-radius: 50%;
+            border: 1px solid rgba(26, 26, 26, 0.12);
+        }
+
+        @media (max-width: 1100px) {
+            /* on tablets there's not enough right margin for the band */
+            .planets { display: none; }
+        }
+
+        /* Sections not in focus fade slightly; the focused one stays full strength */
+        .dimmed {
+            opacity: 0.32;
+            transition: opacity 0.5s ease;
+        }
+        [data-planet] {
+            transition: opacity 0.5s ease;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 640px) {
+            main { padding: 64px 20px 96px; }
+            .hero {
+                flex-direction: column;
+                margin-bottom: 60px;
+            }
+            .hero-illust {
+                flex-direction: row;
+                align-self: flex-start;
+            }
+            section { margin-bottom: 52px; }
+            .rule { margin: 40px 0; }
+            .section-label { font-size: 1.35rem; }
+        }
+
+        /* ── Language switch ── */
+        .lang-switch {
+            position: fixed;
+            top: 24px;
+            left: 24px;
+            z-index: 200;
+            display: flex;
+            align-items: center;
+            font-family: var(--display);
+            background: rgba(250, 250, 248, 0.7);
+            border: 1px solid var(--rule);
+            border-radius: 999px;
+            padding: 4px;
+            font-size: 0.8rem;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+        .lang-switch button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: inherit;
+            color: var(--text-3);
+            padding: 3px 11px;
+            border-radius: 999px;
+            transition: color 0.2s, background 0.2s;
+        }
+        .lang-switch button.active {
+            color: var(--bg);
+            background: var(--text);
+        }
+        .lang-sep {
+            color: var(--rule);
+            margin: 0 1px;
+            user-select: none;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            a { transition: none; }
+            .hero-content > *, .hero-illust { opacity: 1; animation: none; }
+            .reveal { opacity: 1; transform: none; transition: none; }
+            .hero-avatar { transition: none; }
+            .hero-avatar:hover { transform: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switch" id="langSwitch">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <span class="lang-sep">/</span>
+        <button type="button" data-lang="zh">中</button>
+    </div>
+    <div class="planets" id="planets" aria-hidden="true">
+        <svg class="planet-orbit" id="planet-orbit" preserveAspectRatio="none"></svg>
+        <!-- background scattered stars + planet nodes injected by JS -->
+        <div class="planet-focus" id="planet-focus"></div>
+    </div>
+    <main>
+        <header class="hero" data-planet="hero">
+            <div class="hero-content">
+                <h1 class="hero-name">Brandon Liu</h1>
+                <p class="hero-cn">刘冰燃</p>
+                <div class="hero-detail" data-en="AI Engineer · Researcher &nbsp;·&nbsp; Beijing / Kuala Lumpur" data-zh="人工智能工程师 · 研究者 &nbsp;·&nbsp; 北京 / 吉隆坡">
+                    AI Engineer · Researcher &nbsp;·&nbsp; Beijing / Kuala Lumpur
+                </div>
+                <p class="hero-motto">Per aspera ad astra</p>
+                <div class="hero-contact">
+                    <a href="mailto:hello@example.com" onclick="this.href='m'+'ai'+'lto:'+['brandonliubingran','gmail.com'].join('@');this.click();return false">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/brandon-liu-1587a9324/" target="_blank" rel="noopener">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-illust">
+                <img class="hero-avatar" src="avatar.jpg" alt="Brandon Liu">
+            </div>
+        </header>
+
+        <hr class="rule reveal">
+
+        <section class="about reveal" data-planet="about">
+            <h2 class="section-label" data-zh="关于">About</h2>
+            <p data-zh="我是 Brandon，<strong>冰燃</strong>，中文里大致是「燃烧的冰」的意思。我在 Z.ai 研发并交付大语言模型，是公司在亚太地区的第一位 AI 工程师。我的工作贯穿端云架构、实时多模态系统、多智能体设计，以及面向政府的主权大模型项目，和让这些项目真正运行的平凡过程。">I'm Brandon, <strong>冰燃 (Bīng Rán)</strong>, which in Chinese roughly means "burning ice." I build and ship large language models at <a href="https://z.ai" target="_blank" rel="noopener">Z.ai</a>, where I was the company's first AI engineer in the Asia-Pacific region. The work has taken me through edge-cloud architectures, real-time multimodal systems, multi-agent design, and sovereign-model programs for governments — and through the unglamorous middle of actually getting them to run.</p>
+            <p data-zh="过去这两年很疯狂，发展快得惊人，对我、对整个 AI 行业都是。就我而言，我把实时多模态对话带上有史以来第一部承载它的手机，构建归属于一个国家的主权大模型，期间也顺手拿到了几个最佳个人奖、一次与国家首相的握手，去许多个国家游历、与各界的人见面，等等。在 Z.ai 之前，我在一家世界 500 强公司做了一年国际市场的机器学习——时序预测、回归因子，那种真正能让数字动起来的建模。那一年留下的教训至今影响着我：模型好坏永远只取决于喂数据的质量。">The past couple of years have been wild, moving faster than I could have imagined, both for me personally and for the AI field as a whole. On my end, I put real-time multimodal conversation onto the first phone to ever carry it, built sovereign models that belong to a country, and somewhere along the way picked up a few best-individual awards, a handshake with a prime minister, travels across many countries, and meetings with people across industries and disciplines, among other things. Before Z.ai I spent a year applying ML algorithms to international markets at a Fortune Global 500 company, work like time-series forecasting and regression factors, the kind of modeling that actually moves a number. The takeaway from that year has conditioned everything since, which is that a model is only ever as good as the data feeding it.</p>
+            <p data-zh="我在 <a href=&quot;https://www.tsinghua.edu.cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>清华大学</a>度过了研究生阶段，取得金融大数据硕士学位，本科毕业于 <a href=&quot;https://www.hit.edu.cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>哈尔滨工业大学</a>，曾被伊拉斯谟世界项目录取，也与日本东北大学、香港科技大学、UCLA 和马来亚大学建立了紧密的联系。离开模型的时间，我游泳、独自旅行（去过很多国家和地区，我很笃定还会增加）、用 Unity 做游戏，并经营中文互联网上一个不知怎么就聚集了数千粉丝、近百万播放的小角落。">I completed my graduate studies at <a href="https://www.tsinghua.edu.cn" target="_blank" rel="noopener">Tsinghua</a> with a master's in Financial Big Data, after a bachelor's from the <a href="https://www.hit.edu.cn" target="_blank" rel="noopener">Harbin Institute of Technology</a>. I was admitted to the Erasmus Mundus programme, and have been fortunate enough to form close ties with Tohoku, HKUST, UCLA, and the University of Malaya. Away from models I swim, travel solo (many countries and regions, and I'm quite sure that count will keep growing), build games in Unity, and run a little corner of the Chinese internet that has somehow gathered a few thousand followers and nearly a million video views.</p>
+        </section>
+
+        <section class="reveal" data-planet="projects">
+            <h2 class="section-label" data-zh="精选项目">Selected Projects</h2>
+
+            <div class="project">
+                <h3 class="project-title"><a href="https://www.nst.com.my/business/corporate/2025/08/1259122/ytl-launches-ilmu-malaysias-first-multimodal-ai-rivalling-gpt-4" target="_blank" rel="noopener" data-zh="国家主权基础设施大模型">National Sovereignty Infra-LLMs</a></h3>
+                <div class="project-meta" data-zh="核心成员 · 2025 至今 · 北京 / 吉隆坡">Core Member · 2025–present · Beijing / Kuala Lumpur</div>
+                <p class="project-desc" data-zh="这个项目名字听起来很宏大，但它是准确的，大可去查证。这是中国大模型技术的首次出海，帮助一个国家及其企业构建归属于它们、而非他人云端的大模型，这项工作也因此把我带到了吉隆坡。我参与了完整生命周期：真正决定成败的早期沟通、技术对齐、模型训练、部署，以及 API 与商业化路径。我协助规范了公司内部端到端的训练流程，从零主导了各类应用产品（其中包括 agentic chat），除了实际跑基础训练本身之外的技术部分几乎都由我负责。这项工作获得了首相的认可和一次我至今仍觉得有些不真实的握手。">The project name sounds grand, but it's accurate; look it up. This was China's first export of large-model technology, helping a country and its enterprises build models that answer to them rather than somebody else's cloud, which is how it brought me to Kuala Lumpur. I worked the full lifecycle: the early conversations where the deal is actually won, technical alignment, model training, deployment, the API and commercialization path. I helped standardize our internal end-to-end training pipeline, led the various application products (agentic chat among them) from zero, and owned every part except running the base training itself. The work earned the prime minister's endorsement and a handshake I still find slightly surreal.</p>
+            </div>
+
+            <div class="project">
+                <h3 class="project-title"><a href="https://news.aibase.com/news/15273" target="_blank" rel="noopener" data-zh="三星 S25 端云协同 AI">Samsung S25 On-Device-Cloud AI</a></h3>
+                <div class="project-meta" data-zh="核心成员 · 2024–25 · 北京 / 广州">Core Member · 2024–25 · Beijing / Guangzhou</div>
+                <p class="project-desc" data-zh="S25 成为了世界上第一部可以与之进行实时多模态对话的手机——原生非三级联的、看见世界、听见人类、并在呼吸的瞬间回应。我构建端云架构和大模型即时通讯的服务：包括设备侧的视觉语言模型，以及下一代 Bixby 背后的实时 pipeline。2024 年初，对标 Gemini Live 并非一个激进目标，而是及格线：能力与延迟至少要打平。这套方案悄然渗透进了另外几款手机、一个车载系统，以及一两个你肯定听说过的手机品牌（细节受 NDA 约束）。">The S25 became the world's first phone you could hold a real-time, multimodal conversation with, natively end-to-end rather than the old ASR-LLM-TTS three-stage chain, seeing the world, hearing a person, and answering back in the same breath. I built the edge-cloud backbone and the LLM instant-messaging service behind it: the device-side vision-language model and the real-time pipeline powering the next Bixby. In early 2024, matching Gemini Live wasn't a stretch goal, it was the bar: parity, at minimum, in capability and latency. That scope quietly crept into a few other phones, an in-car system, and a handset brand or two you've definitely heard of (details under NDA).</p>
+            </div>
+
+
+            <div class="project">
+                <h3 class="project-title" data-zh="基于知识图谱的教育大模型">Knowledge Graph-based Education LLM</h3>
+                <div class="project-meta" data-zh="核心成员 · 2024 · 北京 / 广州">Core Member · 2024 · Beijing / Guangzhou</div>
+                <p class="project-desc" data-zh="你也许听说过一个曾经火爆一时、随后又悄然从 RAG 时代喧嚣中淡出的项目：GraphRAG。我曾一度真的为它着迷。吸引我的是它如何把图知识、人类经验与可解释性，具体地糅合成一个你能真正指认的东西，而这个项目就是那份痴迷落地的地方。它是一个基于知识图谱的教育大模型，上层叠加实时多模态对话。思路是把大量异构教学材料转化为结构化的语义关系，再让一套早期多智能体设定在其上推理——提问、检索、交叉核验、作答。也正是在这里，我开始钻研三个至今仍驱动我工作的问题：幻觉、智能体编排，以及长程任务，也就是让模型在数十步操作中始终守住目标而不漂移。困难不在于孤立地做到准确或可解释，而在于同时达成两者。">You may have heard of a project that was everywhere for a moment and then quietly faded from the RAG-era hype: GraphRAG. I was, for a while, genuinely obsessed with it. What hooked me was how concretely it fused graph knowledge, human experience, and explainability into one thing you could actually point at. This project is where that obsession landed. An education LLM grounded in a knowledge graph, with real-time multimodal conversation layered on top. The idea was to turn a sprawl of heterogeneous teaching material into structured semantic relationships, then let an early multi-agent setup reason over them, asking, retrieving, cross-checking, and answering. This was also where I first started digging into three problems that still drive my work: hallucination, agentic orchestration, and long-horizon tasks, i.e. getting a model to hold a goal across dozens of steps without drifting. What made it hard wasn't accuracy or explainability in isolation; it was doing both at once.</p>
+            </div>
+
+            <div class="project">
+                <h3 class="project-title" data-zh="CRM 系统的 AI 赋能">AI Empowerment for CRM System</h3>
+                <div class="project-meta" data-zh="项目经理 · 2023–24 · 南京">Project Manager · 2023–24 · Nanjing</div>
+                <p class="project-desc" data-zh="朋友们说我在有意思的时刻总会出现：我就这么恰好在这家世界 500 强公司上市时加入了它。伴随 IPO 而来的架构调整，把我从机器学习真正改道到了 NLP，进而走向大模型（那时候的大模型，说实话，还挺笨的；希望 AGI 时代的人工智能不会因为这句话追究我）。日常我构建的是 CRM 的大脑：智能营销、线索生成、数据结构化、智能漏斗，一个基于逻辑回归的打分模型和线索生命周期工具，加上用大模型完成的营销数据清洗与分类，全部接入 ODS / CDM / ADS 数据仓库形成闭环。我也较早参与了集团首个基于大模型的聊天产品，从设计、技术选型、微调到私有部署，并最终建立起集团内部的大模型品牌。">My friends say I have a habit of showing up at interesting moments: I happened to be at this Fortune Global 500 company right as it went public. The reorg that came with the IPO is what actually rerouted me, from machine learning into NLP, and from there into large models (which were, at the time, still pretty dumb; I hope AGI doesn't hold that line against me). Day to day I built the CRM's brain: intelligent marketing, lead generation, data structuring, smart funnels, a logistic-regression scoring model and a lead-lifecycle tool, plus marketing-data cleansing and classification done with LLMs, all wired into the ODS / CDM / ADS data warehouse as a closed loop. I also got in early on the group's first LLM-based chat product, its design, tech selection, fine-tuning, and private deployment, and ended up establishing the group's internal large model brand.</p>
+            </div>
+        </section>
+
+        <hr class="rule reveal">
+
+        <section class="reveal" data-planet="research">
+            <h2 class="section-label" data-zh="研究方向">Research Interests</h2>
+            <ul class="research-list">
+                <li data-zh="智能体如何在漫长的多轮对话中，仍能在关键时刻调用正确的工具">How agents hold long conversations and still call the right tool when it matters</li>
+                <li data-zh="大模型与图检索、传统机器学习的融合——要的是组合，而非二选一">LLMs fused with graph retrieval and classical ML — the combination, not the either/or</li>
+                <li data-zh="实时对话中的多模态模型，以及需要达成一致的多智能体系统">Multimodal models in real-time conversation, and multi-agent systems that have to agree</li>
+                <li data-zh="让模型保持安全，但不至于变得毫无用处">Keeping models safe without making them useless</li>
+                <li data-zh="让大模型在数据量远不及英语的小语种里也能用起来">Getting LLMs to work in languages with a fraction of English's data</li>
+            </ul>
+        </section>
+
+        <section class="reveal" data-planet="publications">
+            <h2 class="section-label" data-zh="发表论文">Publications</h2>
+            <div class="pub">
+                <div class="pub-title"><em class="pub-badge" data-zh="JCR Q2">JCR Q2</em><a href="https://doi.org/10.1007/s10489-025-06430-4" target="_blank" rel="noopener">Demystifying the black box: AI-enhanced logistic regression for lead scoring</a></div>
+                <div class="pub-meta" data-zh="Applied Intelligence，第 55 卷，574 · 2025 · 独立作者">Applied Intelligence, Vol. 55, 574 · 2025 · Sole Author</div>
+            </div>
+            <div class="pub">
+                <div class="pub-title"><em class="pub-badge" data-zh="Under review">Under review</em>Struct-Agent: Structured Domain-Driven Multi-Agent System for Reliable Accounting Analysis</div>
+                <div class="pub-meta" data-zh="Intelligent Systems in Accounting, Finance and Management · 2026 · 独立作者 · Submitted">Intelligent Systems in Accounting, Finance and Management · 2026 · Sole Author · Submitted</div>
+            </div>
+            <div class="pub">
+                <div class="pub-title"><em class="pub-badge" data-zh="Oral">Oral</em><a href="https://www.asiapacificppn.org" target="_blank" rel="noopener">Applying Information Space Model Combined with Large Models to Public Governance</a></div>
+                <div class="pub-meta" data-zh="AP-PPN B6，54 · 2025 · Oral Presentation">AP-PPN B6, 54 · 2025 · Oral Presentation</div>
+            </div>
+        </section>
+
+        <hr class="rule reveal">
+
+        <section class="reveal" data-planet="experience">
+            <h2 class="section-label" data-zh="工作与教育经历">Experience &amp; Education</h2>
+
+            <div class="exp exp-work">
+                <div class="exp-top">
+                    <div class="exp-title"><img class="exp-logo" src="zai.png" alt="" loading="lazy"><a href="https://en.wikipedia.org/wiki/Z.ai" target="_blank" rel="noopener">Z.ai</a> <span class="exp-sub" data-zh="智谱 · 清华 GLM">Zhipu · TsinghuaGLM</span></div>
+                    <span class="exp-year">2024–</span>
+                </div>
+                <div class="exp-org" data-zh="国际 · AI 工程师">AI Engineer, Global Business Center</div>
+            </div>
+
+            <div class="exp exp-edu">
+                <div class="exp-top">
+                    <div class="exp-title"><img class="exp-logo" src="thu.png" alt="" loading="lazy">Tsinghua University</div>
+                    <span class="exp-year">2024–26</span>
+                </div>
+                <div class="exp-org" data-zh="金融大数据硕士">M.Sc. in Financial Big Data</div>
+            </div>
+
+            <div class="exp exp-work">
+                <div class="exp-top">
+                    <div class="exp-title"><img class="exp-logo" src="chery.png" alt="" loading="lazy"><a href="https://en.wikipedia.org/wiki/Chery" target="_blank" rel="noopener">CHERY</a> <span class="exp-sub" data-zh="世界 500 强">Fortune Global 500</span></div>
+                    <span class="exp-year">2023–24</span>
+                </div>
+                <div class="exp-org" data-zh="数字与信息技术中心 · 数据分析与算法工程师">Data Analysis and Algorithm Engineer, Digital & IT Center</div>
+            </div>
+
+            <div class="exp exp-edu">
+                <div class="exp-top">
+                    <div class="exp-title"><img class="exp-logo" src="hit.png" alt="" loading="lazy">Harbin Institute of Technology</div>
+                    <span class="exp-year">2019–23</span>
+                </div>
+                <div class="exp-org" data-zh="信息管理与信息系统学士">B.Sc. in Information Management and Information System</div>
+            </div>
+        </section>
+
+        <hr class="rule reveal">
+
+        <section class="reveal" data-planet="other">
+            <h2 class="section-label" data-zh="其他">Other</h2>
+
+            <div class="other-item">
+                <div class="other-head">
+                    <div class="other-title" data-zh="<strong>评委</strong> — VibeCoding 黑客松大赛，马来亚大学，吉隆坡，马来西亚"><strong>Judge</strong> — VibeCoding Hackathon Competition, University of Malaya, Kuala Lumpur, Malaysia</div>
+                    <span class="other-year">2025</span>
+                </div>
+            </div>
+
+            <div class="other-item">
+                <div class="other-head">
+                    <div class="other-title" data-zh="<strong>交流</strong> — 基于人工智能的灾害预测，东北大学，仙台，日本"><strong>Exchange</strong> — AI-Based Disaster Prediction, Tohoku University, Sendai, Japan</div>
+                    <span class="other-year">2025</span>
+                </div>
+                <div class="other-desc" data-zh="清华大学两个全额资助名额之一。探讨了如何将人工智能与大数据应用于灾害管理。">One of two fully funded spots from Tsinghua. Discussed how AI and big data could be applied to disaster management.</div>
+            </div>
+
+            <div class="other-item">
+                <div class="other-head">
+                    <div class="other-title" data-zh="<strong>口头报告</strong> — AP-PPN 2025 会议，香港科技大学"><strong>Oral Presentation</strong> — AP-PPN Conference 2025, Hong Kong University of Science and Technology</div>
+                    <span class="other-year">2025</span>
+                </div>
+                <div class="other-desc" data-zh="探索人工智能与大数据在医疗与公共卫生领域的应用，并就信息空间模型与大模型、企业数据仓库的结合做了口头报告。">Explored AI and big data for healthcare and public health, and gave an oral presentation on combining information-space models with LLMs and enterprise data warehouses.</div>
+            </div>
+
+            <div class="other-item">
+                <div class="other-head">
+                    <div class="other-title" data-zh="<strong>交流</strong> — 医学与人工智能，UCLA，洛杉矶，美国"><strong>Exchange</strong> — Medicine and AI, UCLA, Los Angeles, USA</div>
+                    <span class="other-year">2022</span>
+                </div>
+                <div class="other-desc" data-zh="由哈工大资助。学习了人工智能在医疗健康领域的理论与实践。因疫情改为线上进行。">Funded by HIT. Studied the theory and practice of AI in healthcare. Moved online because of COVID.</div>
+            </div>
+
+            <div class="other-item">
+                <div class="other-head">
+                    <div class="other-title" data-zh="<strong>校友发言</strong> — 哈工大芜湖校友会，安徽，中国"><strong>Alumni Speech</strong> — HIT Wuhu Alumni Association, Anhui, China</div>
+                    <span class="other-year">2023</span>
+                </div>
+                <div class="other-desc" data-zh="作为新校友代表发言，市市长、区长及苏州研究院院长等在场。">Spoke as the new-alumni representative, with the Mayor of Wuhu, the District Head of Jiujiang, and the Director of the Suzhou Research Institute in attendance.</div>
+            </div>
+
+            <div class="other-item mentor-note">
+                <div class="other-head">
+                    <div class="other-title" data-zh="<em>研究生产业导师</em> — 李铁，执行董事兼 CFO，<a href=&quot;https://en.wikipedia.org/wiki/Li_Auto&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>理想汽车</a>"><em>Graduate Industry Mentor</em> — Li Tie, Executive Director &amp; CFO, <a href="https://en.wikipedia.org/wiki/Li_Auto" target="_blank" rel="noopener">Li Auto</a></div>
+                </div>
+            </div>
+
+            <div class="other-item mentor-note">
+                <div class="other-head">
+                    <div class="other-title" data-zh="<em>学术导师</em> — 卫强教授，管理科学与工程系，<a href=&quot;https://www.sem.tsinghua.edu.cn/info/1210/32204.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>清华大学经管学院</a>"><em>Academic Advisor</em> — Prof. Wei Qiang, Department of Management Science and Engineering, <a href="https://www.sem.tsinghua.edu.cn/info/1210/32204.htm" target="_blank" rel="noopener">Tsinghua SEM</a></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="rule reveal">
+
+    </main>
+
+    <script>
+        // ── Language switch ──
+        (function() {
+            // Cache English original on first run, so we can swap back from zh.
+            document.querySelectorAll('[data-zh]').forEach(function(el) {
+                el.setAttribute('data-en-cache', el.innerHTML);
+            });
+
+            function setLang(lang) {
+                document.querySelectorAll('[data-zh]').forEach(function(el) {
+                    el.innerHTML = (lang === 'zh')
+                        ? el.getAttribute('data-zh')
+                        : el.getAttribute('data-en-cache');
+                });
+                document.documentElement.lang = lang;
+            }
+            window.__setLang = setLang;
+
+            var switcher = document.getElementById('langSwitch');
+            if (switcher) {
+                switcher.querySelectorAll('button').forEach(function(btn) {
+                    btn.addEventListener('click', function() {
+                        var lang = btn.getAttribute('data-lang');
+                        setLang(lang);
+                        switcher.querySelectorAll('button').forEach(function(b) {
+                            b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+                        });
+                    });
+                });
+            }
+        })();
+    </script>
+
+    <script>
+        // Wait for browser to paint initial (invisible) state before observing
+        requestAnimationFrame(function() {
+            requestAnimationFrame(function() {
+                var obs = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(e) {
+                        if (e.isIntersecting) {
+                            e.target.classList.add('visible');
+                        } else {
+                            e.target.classList.remove('visible');
+                        }
+                    });
+                }, { threshold: 0.05, rootMargin: '0px 0px -60px 0px' });
+
+                document.querySelectorAll('.reveal').forEach(function(el) {
+                    obs.observe(el);
+                });
+            });
+        });
+    </script>
+
+    <script>
+        // ── Planet constellation ──
+        // A single focus planet flies along a curved band on the right margin,
+        // landing on the anchor of whichever section is currently in focus.
+        (function() {
+            var root = document.getElementById('planets');
+            if (!root) return;
+
+            var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var svg = document.getElementById('planet-orbit');
+            var focus = document.getElementById('planet-focus');
+
+            var SECTIONS = ['hero','about','projects','research','publications','experience','other'];
+            var nodes = {};
+            var anchors = [];      // {x,y} in px for each section anchor
+            var current = 'hero';
+            var W, H, ellipseCx, ellipseCy, ellipseRx, ellipseRy;
+
+            // Elliptical orbit like a planet around the sun.
+            // t in 0..1 travels along the front (lower) half of the ellipse,
+            // left→right. Depth grows monotonically toward the right — the right end
+            // is where the orbit comes closest to the viewer (largest, most solid).
+            function orbitPoint(t) {
+                // angle: PI (left endpoint) → 0 (right endpoint), via PI/2 at bottom
+                var ang = Math.PI - t * Math.PI;
+                var x = ellipseCx + ellipseRx * Math.cos(ang);
+                var y = ellipseCy - ellipseRy * Math.sin(ang); // bottom of ellipse at t=0.5
+                // depth: smooth 0 (left/far) → 1 (right/near). The right end reads as closest.
+                var depth = t * t * (3 - 2 * t);                // smoothstep 0..1
+                return {
+                    x: x,
+                    y: y,
+                    scale: 0.42 + 0.95 * depth,                 // 0.42 (far left) → 1.37 (near right)
+                    opacity: 0.20 + 0.60 * depth                // 0.20 (far) → 0.80 (near)
+                };
+            }
+
+            function measure() {
+                W = window.innerWidth;
+                H = window.innerHeight;
+                ellipseCx  = W / 2;
+                ellipseCy  = H * 0.74;                 // a touch below middle
+                ellipseRx  = W * 0.40;                 // wide horizontal reach
+                ellipseRy  = H * 0.18;                 // shallow vertical → flat orbit
+                return W > 900;
+            }
+
+            function buildOrbit() {
+                svg.innerHTML = '';
+                var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                // draw the full ellipse as two arcs so the back half reads as
+                // "behind" — but a single ellipse path is enough for the dotted line.
+                var d = 'M ' + (ellipseCx - ellipseRx) + ' ' + ellipseCy + ' '
+                      + 'A ' + ellipseRx + ' ' + ellipseRy + ' 0 0 0 '
+                      + (ellipseCx + ellipseRx) + ' ' + ellipseCy + ' '
+                      + 'A ' + ellipseRx + ' ' + ellipseRy + ' 0 0 0 '
+                      + (ellipseCx - ellipseRx) + ' ' + ellipseCy + ' ';
+                path.setAttribute('d', d);
+                svg.appendChild(path);
+            }
+
+            function placeNodes() {
+                Object.keys(nodes).forEach(function(k){ nodes[k].remove(); });
+                nodes = {};
+                anchors = [];
+                var n = SECTIONS.length;
+                SECTIONS.forEach(function(key, i) {
+                    // left-dense, right-sparse: square the uniform index so
+                    // equal steps in i crowd toward the left of t∈[0,1].
+                    var u = i / (n - 1);
+                    var t = u * u;
+                    var p = orbitPoint(t);
+                    anchors.push(p);
+                    var el = document.createElement('div');
+                    el.className = 'planet-node';
+                    el.style.left = p.x + 'px';
+                    el.style.top  = p.y + 'px';
+                    // size & opacity reflect depth (far → small & faint)
+                    var sz = 8 * p.scale;
+                    el.style.width  = sz.toFixed(1) + 'px';
+                    el.style.height = sz.toFixed(1) + 'px';
+                    el.style.margin = (-sz/2).toFixed(1) + 'px 0 0 ' + (-sz/2).toFixed(1) + 'px';
+                    el.style.opacity = p.opacity.toFixed(2);
+                    el.style.transition = 'opacity 0.4s ease';
+                    el.dataset.t = t.toFixed(4);
+                    el.dataset.baseOpacity = p.opacity.toFixed(2);
+                    root.appendChild(el);
+                    nodes[key] = el;
+                });
+            }
+
+            var focusT = 0;            // current parametric position (0..1) of the focus planet
+            var targetT = 0;           // where it's animating to
+            var animFrom = 0;          // t at animation start
+            var animStart = 0;         // timestamp
+            var animDur = 720;         // ms — constant, regardless of distance
+            var rafId = null;
+
+            function keyToT(key) {
+                var idx = SECTIONS.indexOf(key);
+                if (idx < 0) idx = 0;
+                var n = SECTIONS.length;
+                var u = idx / (n - 1);
+                return u * u;   // match the left-dense placement in placeNodes
+            }
+
+            // ease-in-out
+            function ease(x) {
+                return x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2;
+            }
+
+            function renderFocusAt(t) {
+                var p = orbitPoint(t);
+                focus.style.transform =
+                    'translate(' + p.x.toFixed(1) + 'px,' + p.y.toFixed(1) + 'px) '
+                  + 'scale(' + p.scale.toFixed(3) + ')';
+                focus.style.opacity = p.opacity.toFixed(3);
+            }
+
+            function focusStep(ts) {
+                if (!animStart) animStart = ts;
+                var k = Math.min(1, (ts - animStart) / animDur);
+                var te = ease(k);
+                focusT = animFrom + (targetT - animFrom) * te;
+                renderFocusAt(focusT);
+                if (k < 1) {
+                    rafId = requestAnimationFrame(focusStep);
+                } else {
+                    rafId = null;
+                }
+            }
+
+            function placeFocus(key) {
+                targetT = keyToT(key);
+                // if a new target arrives mid-flight, restart from current position
+                animFrom = focusT;
+                animStart = 0;
+                if (rafId) cancelAnimationFrame(rafId);
+                // choose duration by arc distance so far jumps aren't artificially slow
+                animDur = 720;
+                if (!reduce) {
+                    rafId = requestAnimationFrame(focusStep);
+                } else {
+                    focusT = targetT;
+                    renderFocusAt(focusT);
+                }
+            }
+
+            function setActive(key) {
+                var changed = (key !== current);
+                current = key;
+                if (changed) placeFocus(key);
+                // hide the trajectory node at the anchor the focus planet now occupies;
+                // restore the rest to their depth-based opacity.
+                SECTIONS.forEach(function(k){
+                    var node = nodes[k];
+                    if (!node) return;
+                    if (k === key) {
+                        node.style.opacity = '0';
+                    } else {
+                        node.style.opacity = node.dataset.baseOpacity || '';
+                    }
+                });
+                // fade out sections that aren't in focus
+                SECTIONS.forEach(function(k){
+                    var el = document.querySelector('[data-planet="' + k + '"]');
+                    if (el) {
+                        if (k === key) {
+                            el.style.opacity = '';
+                        } else {
+                            el.style.opacity = '0.32';
+                        }
+                    }
+                });
+            }
+
+            // ── scatter background stars (deterministic) ──
+            function scatter() {
+                var old = root.querySelectorAll('.planet-bg');
+                old.forEach(function(n){ n.remove(); });
+                var seed = 1;
+                function rnd(){ seed = (seed * 9301 + 49297) % 233280; return seed / 233280; }
+                var count = 26;
+                for (var i = 0; i < count; i++) {
+                    var x = rnd() * W;
+                    var y = rnd() * document.documentElement.scrollHeight;
+                    // keep them faint and small, varied
+                    var s = 1 + rnd() * 2.5;          // 1..3.5px
+                    var a = 0.025 + rnd() * 0.06;     // very faint
+                    var el = document.createElement('div');
+                    el.className = 'planet-bg';
+                    el.style.cssText =
+                        'left:' + x.toFixed(0) + 'px;' +
+                        'top:' + y.toFixed(0) + 'px;' +
+                        'width:' + s.toFixed(1) + 'px;' +
+                        'height:' + s.toFixed(1) + 'px;' +
+                        'opacity:' + a.toFixed(3) + ';';
+                    root.appendChild(el);
+                }
+            }
+
+            // ── scroll spy: which section is currently centered ──
+            function spy() {
+                var viewMid = window.scrollY + H / 2;
+                var best = 'hero', bestDist = Infinity;
+                SECTIONS.forEach(function(key) {
+                    var el = document.querySelector('[data-planet="' + key + '"]');
+                    if (!el) return;
+                    var mid = el.offsetTop + el.offsetHeight / 2;
+                    var d = Math.abs(viewMid - mid);
+                    if (d < bestDist) { bestDist = d; best = key; }
+                });
+                setActive(best);
+            }
+
+            function init() {
+                if (!measure()) { root.style.display = 'none'; return; }
+                root.style.display = '';
+                buildOrbit();
+                placeNodes();
+                scatter();
+                // place the focus planet instantly on the hero anchor, no animation
+                focusT = keyToT('hero');
+                targetT = focusT;
+                renderFocusAt(focusT);
+                spy();
+            }
+
+            function relayout() {
+                if (!measure()) { root.style.display = 'none'; return; }
+                root.style.display = '';
+                buildOrbit();
+                placeNodes();
+                renderFocusAt(focusT);
+            }
+
+            init();
+            window.addEventListener('resize', relayout);
+            window.addEventListener('scroll', spy, { passive: true });
+        })();
+    </script>
+</body>
+</html>
