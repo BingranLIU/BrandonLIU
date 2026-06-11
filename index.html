@@ -799,19 +799,36 @@
         // Wait for browser to paint initial (invisible) state before observing
         requestAnimationFrame(function() {
             requestAnimationFrame(function() {
+                var reveals = document.querySelectorAll('.reveal');
+
                 var obs = new IntersectionObserver(function(entries) {
                     entries.forEach(function(e) {
+                        // Fade in once, when the element's top crosses into the
+                        // upper 30% of the viewport. Never fade back out afterwards
+                        // (so already-read sections stay visible).
                         if (e.isIntersecting) {
                             e.target.classList.add('visible');
-                        } else {
-                            e.target.classList.remove('visible');
                         }
                     });
-                }, { threshold: 0.05, rootMargin: '0px 0px -60px 0px' });
+                }, { threshold: 0, rootMargin: '0px 0px -70% 0px' });
 
-                document.querySelectorAll('.reveal').forEach(function(el) {
-                    obs.observe(el);
-                });
+                reveals.forEach(function(el) { obs.observe(el); });
+
+                // Fallback for short trailing sections that never reach the 30% line:
+                // when the user hits the page bottom, reveal anything still hidden.
+                function revealHidden() {
+                    var atBottom = (window.innerHeight + window.scrollY) >= (document.body.scrollHeight - 4);
+                    if (!atBottom) return;
+                    reveals.forEach(function(el) {
+                        // Only force-reveal elements actually on screen right now.
+                        var r = el.getBoundingClientRect();
+                        if (r.top < window.innerHeight && r.bottom > 0) {
+                            el.classList.add('visible');
+                        }
+                    });
+                }
+                window.addEventListener('scroll', revealHidden, { passive: true });
+                window.addEventListener('resize', revealHidden);
             });
         });
     </script>
