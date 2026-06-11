@@ -147,6 +147,14 @@
             transform: none;
         }
 
+        /* Chapter-level dim: non-current sections fade back (only after they've
+           been revealed once). The .active section overrides dim and stays full.
+           Only apply the transition to already-revealed sections so we don't fight
+           the one-time fade-in animation. */
+        section.visible { transition: opacity 0.5s ease; }
+        section.visible.dim { opacity: 0.42; }
+        section.visible.active { opacity: 1; }
+
         /* ── Hero ── */
         .hero {
             display: flex;
@@ -607,7 +615,7 @@
         </section>
 
         <section class="reveal" data-planet="projects">
-            <h2 class="section-label" data-zh="精选项目">Selected Projects</h2>
+            <h2 class="section-label" data-zh="参与项目">Projects</h2>
 
             <div class="project">
                 <h3 class="project-title"><a href="https://www.nst.com.my/business/corporate/2025/08/1259122/ytl-launches-ilmu-malaysias-first-multimodal-ai-rivalling-gpt-4" target="_blank" rel="noopener" data-zh="国家主权基础设施大模型">National Sovereignty Infra-LLMs</a></h3>
@@ -629,7 +637,7 @@
             </div>
 
             <div class="project">
-                <h3 class="project-title" data-zh="CRM 系统的 AI 赋能">AI Empowerment for CRM System</h3>
+                <h3 class="project-title" data-zh="AI赋能CRM与集团大模型">AI Empowerment for CRM System</h3>
                 <div class="project-meta" data-zh="项目经理 · 2023–24 · 南京">Project Manager · 2023–24 · Nanjing</div>
                 <p class="project-desc" data-zh="朋友们说我在有意思的时刻总会出现：我就这么恰好再次见证了这家世界 500 强公司的转危为安与上市。伴随 IPO 而来的架构调整，把我从机器学习真正改道到了 NLP，进而走向大模型（那时候的大模型，说实话，还挺笨的；希望 AGI 时代的人工智能不会因为这句话追究我）。日常我构建的是 CRM 的大脑：智能营销、线索生成、数据结构化、智能漏斗，一个基于逻辑回归的打分模型和线索生命周期工具，加上用大模型完成的营销数据清洗与分类，全部接入 ODS / CDM / ADS 数据仓库形成闭环。我也较早参与了集团首个基于大模型的聊天产品，从设计、技术选型、微调到私有部署，并最终建立起集团内部的大模型品牌。">My friends say I have a habit of showing up at interesting moments: I happened to witness, once again, a Fortune Global 500 company pull through and then go public. The reorg that came with the IPO is what actually rerouted me, from machine learning into NLP, and from there into large models (which were, at the time, still pretty dumb; I hope AGI doesn't hold that line against me). Day to day I built the CRM's brain: intelligent marketing, lead generation, data structuring, smart funnels, a logistic-regression scoring model and a lead-lifecycle tool, plus marketing-data cleansing and classification done with LLMs, all wired into the ODS / CDM / ADS data warehouse as a closed loop. I also got in early on the group's first LLM-based chat product, its design, tech selection, fine-tuning, and private deployment, and ended up establishing the group's internal large model brand.</p>
             </div>
@@ -674,7 +682,7 @@
                     <div class="exp-title"><img class="exp-logo" src="zai.png" alt="" loading="lazy"><a href="https://en.wikipedia.org/wiki/Z.ai" target="_blank" rel="noopener">Z.ai</a> <span class="exp-sub" data-zh="智谱 · 清华 GLM">Zhipu · TsinghuaGLM</span></div>
                     <span class="exp-year">2024–</span>
                 </div>
-                <div class="exp-org" data-zh="国际 · AI 工程师">AI Engineer, Global Business Center</div>
+                <div class="exp-org" data-zh="国际部 · AI 工程师">AI Engineer, Global Business Center</div>
             </div>
 
             <div class="exp exp-edu">
@@ -795,39 +803,80 @@
     </script>
 
     <script>
-        // Wait for browser to paint initial (invisible) state before observing
+        // ── Section reveal + chapter-level dim/active ──
+        // Two concerns, kept separate:
+        //   1) One-time fade-in: each section animates 0→1 the first time it scrolls in.
+        //   2) Chapter focus: exactly the largest-on-screen section stays "active"
+        //      (full opacity); all other *revealed* sections dim back. This guarantees
+        //      the invariant "the viewport always has at least one normally-visible section",
+        //      so text never disappears.
         requestAnimationFrame(function() {
             requestAnimationFrame(function() {
                 var reveals = document.querySelectorAll('.reveal');
+                var sections = Array.prototype.slice.call(document.querySelectorAll('main > section'));
 
-                var obs = new IntersectionObserver(function(entries) {
+                // One-time fade-in: trigger when a section's top reaches the upper
+                // 30% of the viewport. Once visible, it stays visible.
+                var fadeIn = new IntersectionObserver(function(entries) {
                     entries.forEach(function(e) {
-                        // Fade in once, when the element's top crosses into the
-                        // upper 30% of the viewport. Never fade back out afterwards
-                        // (so already-read sections stay visible).
-                        if (e.isIntersecting) {
-                            e.target.classList.add('visible');
-                        }
+                        if (e.isIntersecting) e.target.classList.add('visible');
                     });
                 }, { threshold: 0, rootMargin: '0px 0px -70% 0px' });
+                reveals.forEach(function(el) { fadeIn.observe(el); });
 
-                reveals.forEach(function(el) { obs.observe(el); });
-
-                // Fallback for short trailing sections that never reach the 30% line:
-                // when the user hits the page bottom, reveal anything still hidden.
-                function revealHidden() {
-                    var atBottom = (window.innerHeight + window.scrollY) >= (document.body.scrollHeight - 4);
-                    if (!atBottom) return;
-                    reveals.forEach(function(el) {
-                        // Only force-reveal elements actually on screen right now.
-                        var r = el.getBoundingClientRect();
-                        if (r.top < window.innerHeight && r.bottom > 0) {
-                            el.classList.add('visible');
+                // Chapter focus: recompute the "active" section on scroll/resize.
+                function pickActive() {
+                    var vh = window.innerHeight;
+                    var best = null, bestArea = 0;
+                    sections.forEach(function(sec) {
+                        var r = sec.getBoundingClientRect();
+                        var top = Math.max(r.top, 0);
+                        var bot = Math.min(r.bottom, vh);
+                        if (bot <= top) return;          // not on screen
+                        var area = bot - top;             // visible height in px
+                        if (area > bestArea) { bestArea = area; best = sec; }
+                    });
+                    if (!best) return;
+                    // The largest-on-screen section is what the user is reading → reveal it,
+                    // guaranteeing the viewport always has >=1 fully-visible section.
+                    best.classList.add('visible');
+                    sections.forEach(function(sec) {
+                        if (!sec.classList.contains('visible')) return; // still animating in
+                        if (sec === best) {
+                            sec.classList.add('active');
+                            sec.classList.remove('dim');
+                        } else {
+                            sec.classList.add('dim');
+                            sec.classList.remove('active');
                         }
                     });
                 }
-                window.addEventListener('scroll', revealHidden, { passive: true });
-                window.addEventListener('resize', revealHidden);
+
+                // Track which sections are currently on screen so we don't recompute
+                // the whole list on every frame when nothing changed.
+                var onScreen = new Set();
+                var anyOnScreen = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(e) {
+                        if (e.isIntersecting) onScreen.add(e.target);
+                        else if (onScreen.size > 1) onScreen.delete(e.target);
+                    });
+                    if (onScreen.size) pickActive();
+                }, { threshold: [0, 0.25, 0.5, 0.75, 1] });
+                sections.forEach(function(s) { anyOnScreen.observe(s); });
+
+                // Fallback for short trailing sections that never reach the 30% line:
+                // force-reveal anything still hidden when the user bottoms out.
+                function revealBottom() {
+                    if ((window.innerHeight + window.scrollY) < (document.body.scrollHeight - 4)) return;
+                    reveals.forEach(function(el) {
+                        var r = el.getBoundingClientRect();
+                        if (r.top < window.innerHeight && r.bottom > 0) el.classList.add('visible');
+                    });
+                    pickActive();
+                }
+                window.addEventListener('scroll', revealBottom, { passive: true });
+                window.addEventListener('resize', function() { pickActive(); }, { passive: true });
+                pickActive();
             });
         });
     </script>
