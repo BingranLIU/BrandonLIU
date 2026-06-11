@@ -698,7 +698,7 @@
                     <div class="exp-title"><img class="exp-logo" src="chery.png" alt="" loading="lazy"><a href="https://en.wikipedia.org/wiki/Chery" target="_blank" rel="noopener">CHERY</a> <span class="exp-sub" data-zh="世界 500 强">Fortune Global 500</span></div>
                     <span class="exp-year">2023–24</span>
                 </div>
-                <div class="exp-org" data-zh="数信中心 · 数据分析与算法工程师">Data Analysis and Algorithm Engineer, Digital & IT Center</div>
+                <div class="exp-org" data-zh="数信中心 · 机器学习算法工程师">Machine Learning Algorithm Engineer, Digital & IT Center</div>
             </div>
 
             <div class="exp exp-edu">
@@ -812,25 +812,36 @@
                 // THE single function that owns dim/active. Scroll & resize both call it.
                 function update() {
                     var vh = window.innerHeight;
-                    // 1) Find the section with the most pixels on screen.
-                    var best = null, bestH = 0;
+                    // Find current active section (sticky until clearly overtaken).
+                    var curActive = null;
+                    sections.forEach(function(sec) {
+                        if (sec.classList.contains('active')) curActive = sec;
+                    });
+
+                    // Compute the largest-on-screen section.
+                    var top = null, topH = 0;
                     sections.forEach(function(sec) {
                         var h = visibleHeight(sec);
-                        if (h > bestH) { bestH = h; best = sec; }
+                        if (h > topH) { topH = h; top = sec; }
                     });
-                    // 2) Force-reveal the best one (covers fast-scroll & short-section cases
-                    //    where the fade-in observer hasn't fired yet). This is the stated
-                    //    invariant: if something is on screen and largest, it MUST be visible.
+
+                    // Hysteresis: keep the current active section "sticky" — only switch
+                    // when another section's visible height exceeds it by a clear margin
+                    // (15% of viewport). This stops long sections (e.g. Projects, which
+                    // spans multiple screens) from being prematurely dimmed at the boundary.
+                    var best = top;
+                    if (curActive && curActive !== top) {
+                        var curH = visibleHeight(curActive);
+                        if (topH < curH + vh * 0.15) best = curActive;
+                    }
+
+                    // Force-reveal best: invariant — whatever is largest-on-screen MUST be visible.
                     if (best) best.classList.add('visible');
-                    // 3) Mark best as active, everything else (that's been revealed) as dim.
                     sections.forEach(function(sec) {
                         if (sec === best) {
                             sec.classList.add('active');
                             sec.classList.remove('dim');
                         } else if (sec.classList.contains('visible')) {
-                            // Only dim already-revealed sections; un-revealed ones stay
-                            // at opacity:0 (their fade-in initial state) — we touch them here
-                            // so that when they DO reveal, fresh CSS state is correct.
                             sec.classList.add('dim');
                             sec.classList.remove('active');
                         }
