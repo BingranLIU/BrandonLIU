@@ -804,19 +804,50 @@
 
     <script>
         // ── Section reveal + chapter-level dim/active ──
-        // Two concerns, kept separate:
-        //   1) One-time fade-in: each section animates 0→1 the first time it scrolls in.
-        //   2) Chapter focus: exactly the largest-on-screen section stays "active"
-        //      (full opacity); all other *revealed* sections dim back. This guarantees
-        //      the invariant "the viewport always has at least one normally-visible section",
-        //      so text never disappears.
+        // Invariant: the viewport ALWAYS has at least one fully-visible ("active")
+        // section. The largest-on-screen section is active and visible; every other
+        // already-revealed section dims back. Text can never vanish.
         requestAnimationFrame(function() {
             requestAnimationFrame(function() {
                 var reveals = document.querySelectorAll('.reveal');
                 var sections = Array.prototype.slice.call(document.querySelectorAll('main > section'));
 
-                // One-time fade-in: trigger when a section's top reaches the upper
-                // 30% of the viewport. Once visible, it stays visible.
+                function visibleHeight(sec) {
+                    var r = sec.getBoundingClientRect();
+                    return Math.max(0, Math.min(r.bottom, window.innerHeight) - Math.max(r.top, 0));
+                }
+
+                // THE single function that owns dim/active. Scroll & resize both call it.
+                function update() {
+                    var vh = window.innerHeight;
+                    // 1) Find the section with the most pixels on screen.
+                    var best = null, bestH = 0;
+                    sections.forEach(function(sec) {
+                        var h = visibleHeight(sec);
+                        if (h > bestH) { bestH = h; best = sec; }
+                    });
+                    // 2) Force-reveal the best one (covers fast-scroll & short-section cases
+                    //    where the fade-in observer hasn't fired yet). This is the stated
+                    //    invariant: if something is on screen and largest, it MUST be visible.
+                    if (best) best.classList.add('visible');
+                    // 3) Mark best as active, everything else (that's been revealed) as dim.
+                    sections.forEach(function(sec) {
+                        if (sec === best) {
+                            sec.classList.add('active');
+                            sec.classList.remove('dim');
+                        } else if (sec.classList.contains('visible')) {
+                            // Only dim already-revealed sections; un-revealed ones stay
+                            // at opacity:0 (their fade-in initial state) — we touch them here
+                            // so that when they DO reveal, fresh CSS state is correct.
+                            sec.classList.add('dim');
+                            sec.classList.remove('active');
+                        }
+                    });
+                }
+
+                // One-time fade-in: animate 0→1 the first time a section scrolls into the
+                // upper 30% of the viewport. Independent of the dim/active logic above;
+                // once visible it stays visible forever.
                 var fadeIn = new IntersectionObserver(function(entries) {
                     entries.forEach(function(e) {
                         if (e.isIntersecting) e.target.classList.add('visible');
@@ -824,59 +855,24 @@
                 }, { threshold: 0, rootMargin: '0px 0px -70% 0px' });
                 reveals.forEach(function(el) { fadeIn.observe(el); });
 
-                // Chapter focus: recompute the "active" section on scroll/resize.
-                function pickActive() {
-                    var vh = window.innerHeight;
-                    var best = null, bestArea = 0;
-                    sections.forEach(function(sec) {
-                        var r = sec.getBoundingClientRect();
-                        var top = Math.max(r.top, 0);
-                        var bot = Math.min(r.bottom, vh);
-                        if (bot <= top) return;          // not on screen
-                        var area = bot - top;             // visible height in px
-                        if (area > bestArea) { bestArea = area; best = sec; }
-                    });
-                    if (!best) return;
-                    // The largest-on-screen section is what the user is reading → reveal it,
-                    // guaranteeing the viewport always has >=1 fully-visible section.
-                    best.classList.add('visible');
-                    sections.forEach(function(sec) {
-                        if (!sec.classList.contains('visible')) return; // still animating in
-                        if (sec === best) {
-                            sec.classList.add('active');
-                            sec.classList.remove('dim');
-                        } else {
-                            sec.classList.add('dim');
-                            sec.classList.remove('active');
-                        }
-                    });
+                // Drive update() from scroll + resize directly (not just IntersectionObserver,
+                // whose async callbacks miss mid-scroll frames and were leaving whole-screen-dim).
+                var ticking = false;
+                function onScroll() {
+                    if (ticking) return;
+                    ticking = true;
+                    requestAnimationFrame(function() { update(); ticking = false; });
                 }
+                // IntersectionObserver as an extra trigger too (covers sections entering
+                // without scroll, e.g. anchor jumps).
+                var trigger = new IntersectionObserver(function() { onScroll(); },
+                    { threshold: [0, 0.25, 0.5, 0.75, 1] });
+                sections.forEach(function(s) { trigger.observe(s); });
 
-                // Track which sections are currently on screen so we don't recompute
-                // the whole list on every frame when nothing changed.
-                var onScreen = new Set();
-                var anyOnScreen = new IntersectionObserver(function(entries) {
-                    entries.forEach(function(e) {
-                        if (e.isIntersecting) onScreen.add(e.target);
-                        else if (onScreen.size > 1) onScreen.delete(e.target);
-                    });
-                    if (onScreen.size) pickActive();
-                }, { threshold: [0, 0.25, 0.5, 0.75, 1] });
-                sections.forEach(function(s) { anyOnScreen.observe(s); });
-
-                // Fallback for short trailing sections that never reach the 30% line:
-                // force-reveal anything still hidden when the user bottoms out.
-                function revealBottom() {
-                    if ((window.innerHeight + window.scrollY) < (document.body.scrollHeight - 4)) return;
-                    reveals.forEach(function(el) {
-                        var r = el.getBoundingClientRect();
-                        if (r.top < window.innerHeight && r.bottom > 0) el.classList.add('visible');
-                    });
-                    pickActive();
-                }
-                window.addEventListener('scroll', revealBottom, { passive: true });
-                window.addEventListener('resize', function() { pickActive(); }, { passive: true });
-                pickActive();
+                window.addEventListener('scroll', onScroll, { passive: true });
+                window.addEventListener('resize', onScroll, { passive: true });
+                window.addEventListener('load', update);
+                update();
             });
         });
     </script>
